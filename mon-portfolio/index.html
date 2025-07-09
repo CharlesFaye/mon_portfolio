@@ -18,10 +18,37 @@
     <meta name="twitter:url" content="">
     <meta name="twiiter:image" content="">
     <meta name="twitter:creator" content="@Bebouzo">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style.css">
     <title>Vite App</title>
   </head>
-  <body>
+  <body class="">
+    <header class="">
+      <div class="flex justify-between items-center max-w-full md:relative md:border-b md:border-b-gray-200 md:py-5">
+        <div id="dark-mode" class="md:absolute md:right-2 md:top-2">
+          <i class="bi bi-brightness-low text-2xl cursor-pointer"></i>
+        </div>
+        <div id="list-icon" class="m-3 md:hidden">
+          <i class="bi bi-list text-lg text-white bg-blue-700 px-3 py-2 rounded-full cursor-pointer"></i>
+       </div>
+      </div>
+      
+      <nav id="mobile-navbar" class="hidden animate-fade-in md:flex">
+         <ul class="flex flex-col gap-10 justify-center items-center w-3/4 h-screen bg-white p-2 md:bg-transparent md:items-start">
+            <li data-hover="home"><a href="#hero" class="active bg-gray-100 text-black py-3 pl-4 pr-8 md:p-4 rounded-full"><i class="bi bi-house navicon md:text-2xl"></i><span class="ml-2 md:hidden" >Accueil</span></a></li>
+            <li data-hover="about"><a href="#about" class="bg-gray-100 text-black py-3 pl-4 pr-8 md:p-4 rounded-full"><i class="bi bi-person navicon md:text-2xl"></i><span class="ml-2 md:hidden">À Propos</span></a></li>
+            <li data-hover="services"><a href="#services" class="bg-gray-100 text-black py-3 pl-4 pr-8 md:p-4 rounded-full"><i class="bi bi-hdd-stack navicon md:text-2xl"></i><span class="ml-2 md:hidden">Services</span></a></li>
+            <li data-hover="skills"><a href="#resume" class="bg-gray-100 text-black py-3 pl-4 pr-8 md:p-4 rounded-full"><i class="bi bi-gear navicon md:text-2xl"></i><span class="ml-2 md:hidden">Compétences</span></a></li>
+            <li data-hover="projects"><a href="#portfolio" class="bg-gray-100 text-black py-3 pl-4 pr-8 md:p-4 rounded-full"><i class="bi bi-images navicon md:text-2xl"></i><span class="ml-2 md:hidden">Projets</span></a></li>
+            <li data-hover="contacts"><a href="#contact" class="bg-gray-100 text-black py-3 pl-4 pr-8 md:p-4 rounded-full"><i class="bi bi-envelope navicon md:text-2xl"></i><span class="ml-2 md:hidden">Contact</span></a></li>
+       </ul>
+      </nav>
+  
+    </header>
     
     <script type="module" src="/src/main.js"></script>
   </body>

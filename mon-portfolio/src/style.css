@@ -1,3 +1,78 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  :root {
+    --font-primary: "Playfair Display";
+    --font-secondary: "Roboto",sans-serif;
+
+    --margin-left: 5px;
+  }
+  .active {
+     color: #fff;
+     background-color: blue;
+  }
+  #mobile-navbar a {
+    font-family: var(--font-secondary);
+  }
+ [data-hover="home"] a:hover::after{
+    content: "Accueil";
+    margin-left: var(--margin-left);
+  }
+  [data-hover="about"] a:hover::after{
+    content: "À Propos";
+    margin-left: var(--margin-left);
+  }
+  [data-hover="services"] a:hover::after{
+    content: "Services";
+    margin-left: var(--margin-left);
+  }
+  [data-hover="skills"] a:hover::after{
+    content: "Compétences";
+    margin-left: var(--margin-left);
+  }
+   [data-hover="projects"] a:hover::after{
+    content: "Projets";
+    margin-left: var(--margin-left);
+  }
+   [data-hover="contacts"] a:hover::after{
+    content: "Contacts";
+    margin-left: var(--margin-left);
+  }
+  .animate-fade-in {
+    animation: fade-in 0.3s ease-in-out;
+    transition: opacity 1s;
+  }
+  .animate-fade-out {
+    transition: display 1s;
+    animation: fade-out 0.3s ease-in-out;
+  }
+
+  @keyframes fade-in {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    
+  }
+
+  @keyframes fade-out {
+     from {
+        transform: translateX(0);
+        display: flex;
+     }
+     to {
+        transform: translateX(-500px);
+        display: none;
+     }
+  }
+  
+
+
+
+}
