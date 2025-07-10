@@ -87,8 +87,13 @@
     content: "Contacts";
     margin-left: var(--margin-left);
   }
+   svg {
+    width: 24px;
+    height: 24px;
+  }
   }
 
+ 
 
 
 }
