@@ -26,18 +26,18 @@
     <link rel="stylesheet" href="src/style.css">
     <title>Vite App</title>
   </head>
-  <body class="">
+  <body class="relative">
     <header class="">
       <div class="flex justify-between items-center max-w-full md:relative md:border-b md:border-b-gray-200 md:py-5">
         <div id="dark-mode" class="md:absolute md:right-2 md:top-2">
           <i class="bi bi-brightness-low text-2xl cursor-pointer"></i>
         </div>
-        <div id="list-icon" class="m-3 md:hidden">
+        <div id="list-icon" class="m-2 md:hidden">
           <i class="bi bi-list text-lg text-white bg-blue-700 px-3 py-2 rounded-full cursor-pointer"></i>
        </div>
       </div>
       
-      <nav id="mobile-navbar" class="hidden animate-fade-in md:flex">
+      <nav id="mobile-navbar" class="hidden animate-fade-in md:flex sticky z-[999] ">
          <ul class="flex flex-col gap-10 justify-center items-center w-3/4 h-screen bg-white p-2 md:bg-transparent md:items-start">
             <li data-hover="home"><a href="#hero" class="active bg-gray-100 text-black py-3 pl-4 pr-8 md:p-4 rounded-full"><i class="bi bi-house navicon md:text-2xl"></i><span class="ml-2 md:hidden" >Accueil</span></a></li>
             <li data-hover="about"><a href="#about" class="bg-gray-100 text-black py-3 pl-4 pr-8 md:p-4 rounded-full"><i class="bi bi-person navicon md:text-2xl"></i><span class="ml-2 md:hidden">À Propos</span></a></li>
@@ -49,6 +49,29 @@
       </nav>
   
     </header>
+    <main>
+         <section id="hero-section" class="absolute top-11">
+            <figure class=" z-[9995]">
+                <img src="/images/hero-image.jpg" alt="Une hero image d'un ordinateur" class="object-cover h-screen w-screen">
+                <figcaption class="hidden">Un ordinateur posé sur une table.</figcaption>
+            </figure>
+
+            <div class="absolute top-52 left-16 md:left-60 z-[997] md:z-[999]">
+              <h2 class="text-6xl text-[#45505b] font-bold">Charles Simel Faye</h2>
+                <p class="text-3xl mt-5 font-[Roboto]">Développeur Web Front end</p>
+                <div class="mt-5 flex gap-5">
+                <a href="https://www.linkedin.com/in/charles-simel-faye-3382bb2aa/" target="_blank" ><i class="bi bi-linkedin text-2xl text-[#45505b]"></i></a>
+                <a href="https://github.com/CharlesFaye" target="_blank" rel="noopener noreferrer"><i class="bi bi-github text-2xl text-[#45505b]"></i></a>
+                <a href="https://www.instagram.com/bebouzo" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram text-2xl text-[#45505b]"></i></a>
+                <a href="https://x.com/Bebouzo" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter-x text-[#45505b] mt-1" viewBox="0 0 16 16">
+                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                </svg></a>
+              </div>
+            </div>
+          </section>
+        
+    </main>
+ 
     
     <script type="module" src="/src/main.js"></script>
   </body>

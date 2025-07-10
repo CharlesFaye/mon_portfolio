@@ -9,10 +9,23 @@
 
     --margin-left: 5px;
   }
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+    font-family: var(--font-primary);
+  }
   .active {
      color: #fff;
      background-color: blue;
   }
+  img {
+    filter: opacity(0.3);
+
+  }
+  
   #mobile-navbar a {
     font-family: var(--font-secondary);
   }
