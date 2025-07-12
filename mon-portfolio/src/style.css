@@ -16,30 +16,7 @@
   #mobile-navbar a {
     font-family: var(--font-secondary);
   }
- [data-hover="home"] a:hover::after{
-    content: "Accueil";
-    margin-left: var(--margin-left);
-  }
-  [data-hover="about"] a:hover::after{
-    content: "À Propos";
-    margin-left: var(--margin-left);
-  }
-  [data-hover="services"] a:hover::after{
-    content: "Services";
-    margin-left: var(--margin-left);
-  }
-  [data-hover="skills"] a:hover::after{
-    content: "Compétences";
-    margin-left: var(--margin-left);
-  }
-   [data-hover="projects"] a:hover::after{
-    content: "Projets";
-    margin-left: var(--margin-left);
-  }
-   [data-hover="contacts"] a:hover::after{
-    content: "Contacts";
-    margin-left: var(--margin-left);
-  }
+
   .animate-fade-in {
     animation: fade-in 0.3s ease-in-out;
     transition: opacity 1s;
@@ -72,6 +49,52 @@
      }
   }
   
+  @media screen and (min-width: 768px) {
+   
+  .nav-link {
+  position: relative;
+  display: inline-block;
+  color: white;
+  overflow: hidden;
+}
+
+.nav-link::before {
+  content: attr(data-text); /* texte du lien */
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: auto;
+  color: #fff; /* couleur animée */
+  transition: left 0.3s ease;
+}
+
+.nav-link:hover::before {
+  left: 45px;
+  top: 18px;
+}
+
+.nav-link span {
+  display: none;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover span {
+  transform: translateX(100%);
+  opacity: 0;
+  display: inline-block;
+}
+.nav-link:hover i {
+  color: #fff;
+}
+
+ 
+   svg {
+    width: 24px;
+    height: 24px;
+  }
+  }
+
 
 
 
