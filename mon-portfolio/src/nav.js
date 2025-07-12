@@ -45,6 +45,7 @@ listIcon.addEventListener('click', toggleNavbar);
  *
  * @param {HTMLElement} currentElement - The element to set as active.
  */
+/*
 const setActive = (currentElement) => {
     anchorElements.forEach(anchor => {
         anchor.classList.remove('active');
@@ -52,7 +53,7 @@ const setActive = (currentElement) => {
     })
 }
 
-
+*/
 /**
  * Handles the hover event on navbar items and sets the active anchor based on the hovered item.
  *
@@ -60,6 +61,7 @@ const setActive = (currentElement) => {
  * The function checks the 'data-hover' attribute of the event's current target and
  * calls the corresponding setActive function with the appropriate anchor.
  */
+/*
 const handleNavbarHover = (e) => {
      switch (e.currentTarget.getAttribute('data-hover')) {
         case "home":
@@ -86,4 +88,4 @@ const handleNavbarHover = (e) => {
 liElements.forEach(li => {
     li.addEventListener('mouseenter', handleNavbarHover)
 })
-
+*/
