@@ -9,10 +9,23 @@
 
     --margin-left: 5px;
   }
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+    font-family: var(--font-primary);
+  }
   .active {
      color: #fff;
-     background-color: blue;
+     background-color: oklch(48.8% 0.243 264.376);
   }
+  img {
+    filter: opacity(0.3);
+
+  }
+  
   #mobile-navbar a {
     font-family: var(--font-secondary);
   }
@@ -87,15 +100,11 @@
 .nav-link:hover i {
   color: #fff;
 }
-
- 
-   svg {
-    width: 24px;
-    height: 24px;
+svg {
+  width: 24px;
+  height: 24px;
+}
+  
   }
-  }
-
-
-
 
 }
