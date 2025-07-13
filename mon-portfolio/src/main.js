@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-import { mobileNavbar, listIcon, anchorElements } from "./nav.js";
-=======
 import { mobileNavbar, listIcon, anchorElements } from "./nav.js";
 
 
@@ -13,4 +10,4 @@ import { mobileNavbar, listIcon, anchorElements } from "./nav.js";
       loop: true
     });
   });
->>>>>>> Stashed changes
+
