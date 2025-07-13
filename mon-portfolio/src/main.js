@@ -10,3 +10,4 @@ import { mobileNavbar, listIcon, anchorElements } from "./nav.js";
       loop: true
     });
   });
+
