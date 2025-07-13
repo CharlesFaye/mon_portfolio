@@ -25,7 +25,9 @@
     filter: opacity(0.3);
 
   }
-  
+  .nav-link:hover i {
+  color: #fff;
+ }
   #mobile-navbar a {
     font-family: var(--font-secondary);
   }
@@ -96,9 +98,6 @@
   transform: translateX(100%);
   opacity: 0;
   display: inline-block;
-}
-.nav-link:hover i {
-  color: #fff;
 }
 svg {
   width: 24px;
