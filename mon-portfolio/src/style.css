@@ -68,11 +68,13 @@
   }
   
   @media screen and (min-width: 768px) {
-    svg {
-      width: 22px;
-      height: 22px;
-    }
-  }
+   
+  .nav-link {
+  position: relative;
+  display: inline-block;
+  color: white;
+  overflow: hidden;
+}
 
 .nav-link::before {
   content: attr(data-text); /* texte du lien */
@@ -100,7 +102,10 @@
   opacity: 0;
   display: inline-block;
 }
-
+svg {
+  width: 22px;
+  height: 22px;
+}
   
   }
 
