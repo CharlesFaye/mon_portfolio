@@ -21,6 +21,9 @@
      color: #fff;
      background-color: oklch(48.8% 0.243 264.376);
   }
+  .w-custom {
+    width: calc(75vw + 100px);
+  }
   img {
     filter: opacity(0.3);
 
