@@ -26,14 +26,14 @@
     <link rel="stylesheet" href="src/style.css">
     <title>Vite App</title>
   </head>
-  <body class="">
-    <header class="">
+  <body>
+    <header>
       <div class="flex justify-between items-center max-w-full md:relative md:border-b md:border-b-gray-200 md:py-5">
         <div id="dark-mode" class="md:absolute md:right-2 md:top-2">
-          <i class="bi bi-brightness-low text-2xl cursor-pointer"></i>
+          <i class="bi bi-brightness-low text-2xl cursor-pointer" aria-label="Basculer entre mode clair et mode sombre"></i>
         </div>
         <div id="list-icon" class="m-3 md:hidden">
-          <i class="bi bi-list text-lg text-white bg-blue-700 px-3 py-2 rounded-full cursor-pointer"></i>
+          <i class="bi bi-list text-lg text-white bg-blue-700 px-3 py-2 rounded-full cursor-pointer" aria-label="Ouvrir le menu"></i>
        </div>
       </div>
       
@@ -51,9 +51,7 @@
     </header>
     <main class="">
          <section id="hero">
-                <img src="/images/hero-image.jpg" alt="Une hero image d'un ordinateur" class="object-cover h-screen w-screen">
-                <figcaption class="hidden">Un ordinateur posé sur une table.</figcaption>
-            </figure>
+                <img src="/images/hero-image.jpg" alt="Une image d'un ordinateur" class="object-cover h-screen w-screen">
 
             <div class="absolute top-52 left-16 md:left-32 lg:left-60 z-[997] md:z-[999]">
               <h2 class="text-4xl md:text-6xl text-[#45505b] font-bold">Charles Simel Faye</h2>
@@ -69,15 +67,12 @@
             </div>
           </section>
           <section id="about" class="md:w-custom md:mx-auto">
-            <h2 class="text-2xl md:text-3xl text-center mt-10 md:mt-16 mb-5 font-bold">À Propos de Moi</h2>
-            <div class=" bg-gray-400 rounded-lg w-36 m-auto h-[1px] relative">
-              <div class=" w-16 m-auto h-1 bg-blue-900 absolute -top-[0.15rem] left-10 rounded-lg"></div>
+            <h2 class="text-2xl md:text-3xl text-center mt-10 md:mt-16 mb-5 font-bold" aria-labelledby="about">À Propos de Moi</h2>
+            <div class=" bg-gray-400 rounded-lg w-36 m-auto h-[1px] relative" aria-hidden="true">
+              <div class=" w-16 m-auto h-1 bg-blue-900 absolute -top-[0.1rem] left-10 rounded-lg" aria-hidden="true"></div>
             </div>
             <p class="max-w-full p-5 text-justify md:m-auto md:w-3/4 md:text-center font-[Roboto]">Passionné par le développement web, je conçois des sites modernes, responsives et centrés sur l'expérience utilisateur. Curieux, rigoureux et toujours prêt à relever de nouveaux défis, je continue d’apprendre chaque jour pour améliorer mes compétences. Mon objectif : créer des solutions web efficaces, esthétiques et accessibles à tous.</p>
-            <figure class="inline">
               <img src="/images/IMG-20240817-WA0009.jpg" alt="Photo de Charles Faye" class="filter-none max-w-full p-5 md:w-[500px] md:h-[500px] md:mx-auto md:block lg:float-left object-cover">
-              <figcaption class="hidden">Une photo de moi même.</figcaption>
-            </figure>
             <h3 class="text-blue-700 font-bold text-xl text-center lg:text-start p-5  underline decoration-wavy underline-offset-4 ">Développeur Web & Passionné de code.</h3>
             <p class="max-w-full px-5 text-justify md:mx-auto md:w-3/4 font-[Roboto]">Bonjour et bienvenue sur mon portfolio !</p>
             <p class="max-w-full px-5 py-2 md:mx-auto md:w-3/4  text-justify font-[Roboto]">Je m'appelle Charles Simel Faye, et mon parcours est à la croisée des chemins entre <strong>technique</strong>, <strong>rigueur</strong> et <strong>passion</strong> pour le numérique. Après avoir découvert le monde de l'informatique il y'a de cela quelques années, j'ai petit à petit commencé à développer un amour profond envers cette science qui m'était jadis autant méconnue que l'anatomie des pingouins 😆, et qui aujourd'hui est devenue une passion à laquelle je me consacre à plein temps.</p>
@@ -89,7 +84,40 @@
             <p class="max-w-full px-5 py-3 text-justify md:m-auto md:w-3/4  font-[Roboto]">Ce portfolio reflète non seulement mon parcours, mais aussi mon envie constante d’apprendre, d’évoluer et de contribuer à des projets qui ont du sens. Si vous souhaitez en savoir plus ou collaborer avec moi, n’hésitez pas à me contacter !
             </p>
           </section>
-        
+          <section id="services" class="md:w-custom md:mx-auto">
+              <h2 class="text-2xl md:text-3xl text-center mt-10 md:mt-16 mb-5 font-bold" aria-labelledby="services">Services</h2>
+              <div class=" bg-gray-400 rounded-lg w-36 m-auto h-[1px] relative" aria-hidden="true">
+                <div class=" w-16 m-auto h-1 bg-blue-900 absolute -top-[0.1rem] left-10 rounded-lg" aria-hidden="true"></div>
+              </div>
+              <p class="max-w-full px-5 py-5 text-justify md:m-auto md:w-3/4  font-[Roboto]">Découvrez les services que je propose pour vous aider à créer, améliorer et faire évoluer votre présence en ligne. De la conception sur mesure à l’optimisation SEO, chaque service est pensé pour répondre à vos besoins spécifiques.</p>
+              <div class="flex flex-col md:flex-row md:justify-center md:flex-wrap gap-5">
+                <div id="design-container" class="relative">
+                  <img src="/images/domenico-loia-hGV2TfOh0ns-unsplash.jpg" alt="image d'un setup."  class="max-w-full p-5 md:w-[400px] md:h-[400px] object-cover sticky z-[9997] cursor-pointer" data-hover="setup" loading="lazy">
+                      <div class="border-s-2 border-s-blue-700 border-b-2 border-blue-700 opacity-75 absolute z-[9999]  bottom-10 left-10 w-16 h-16" aria-hidden="true"></div>
+                      <div class="border-e-2 border-e-blue-700 border-t-2 border-blue-700 opacity-75 absolute z-[9999] top-10 right-10 w-16 h-16" aria-hidden="true"></div>
+                      <p class="text-2xl font-[Roboto] italic absolute top-24 md:top-36 left-10 md:left-24 w-3/4 z-[9999]">Création de  sites web sur mesure</p>
+                      <p class="text-2xl font-[Roboto]  italic absolute bottom-10 right-10 z-[9999]">Front/Back/BD</p>
+                </div>
+                <div id="wordpress-container" class="relative">
+                      <img src="/images/justin-morgan-ZjX-z2Q5zrk-unsplash.jpg" alt="tableau de bord de Wordpress." class="max-w-full p-5 md:w-[400px] md:h-[400px] object-cover sticky z-[9997] cursor-pointer" data-hover="wordpress-dashboard" loading="lazy">
+                      <div class="border-s-2 border-s-blue-700 border-b-2 border-blue-700 opacity-75 absolute z-[9999]  bottom-10 left-10 w-16 h-16" aria-hidden="true"></div>
+                      <div class="border-e-2 border-e-blue-700 border-t-2 border-blue-700 opacity-75 absolute z-[9999] top-10 right-10 w-16 h-16" aria-hidden="true"></div>
+                      <p class="text-2xl font-[Roboto] italic absolute z-[9999] top-24 md:top-36 left-10 md:left-24 w-3/4">Intégration et Personnalisation CMS (Wordpress)</p>
+                </div>
+                <div id="maintenance-container" class="relative">
+                  <img src="/images/markus-spiske-VO5w2Ida70s-unsplash.jpg" alt="panneau de signalisation." class="max-w-full p-5 md:w-[400px] md:h-[400px] object-cover sticky z-[9997] cursor-pointer" data-hover="maintenance" loading="lazy">
+                      <div class="border-s-2 border-s-blue-700 border-b-2 border-blue-700 opacity-75 absolute z-[9999]  bottom-10 left-10 w-16 h-16" aria-hidden="true"></div>
+                      <div class="border-e-2 border-e-blue-700 border-t-2 border-blue-700 opacity-75 absolute z-[9999] top-10 right-10 w-16 h-16" aria-hidden="true"></div>
+                      <p class="text-2xl font-[Roboto] italic absolute z-[9999] top-24 md:top-36 left-10 md:left-16 w-3/4">Maintenance & Amélioration</p>
+                </div>
+                <div id="seo-container" class="relative">
+                   <img src="/images/stephen-phillips-hostreviews-co-uk-shr_Xn8S8QU-unsplash.jpg" alt="tableau de bord relatif à l'optimisation SEO." class="max-w-full p-5 md:w-[400px] md:h-[400px] object-cover cursor-pointer sticky z-[9997]" data-hover="seo" loading="lazy">
+                      <div class="border-s-2 border-s-blue-700 border-b-2 border-blue-700 opacity-75 absolute z-[9999]  bottom-10 left-10 w-16 h-16" aria-hidden="true"></div>
+                      <div class="border-e-2 border-e-blue-700 border-t-2 border-blue-700 opacity-75 absolute z-[9999] top-10 right-10 w-16 h-16" aria-hidden="true"></div>
+                      <p class="text-2xl font-[Roboto]  italic absolute z-[9999] top-24 md:top-36 left-10 md:left-24 w-3/4">Optimisation SEO & Performance</p>
+                </div>
+              </div>
+          </section>
     </main>
  
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
