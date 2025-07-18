@@ -7,19 +7,23 @@
     --font-primary: "Playfair Display";
     --font-secondary: "Roboto",sans-serif;
 
+    --primary-color: oklch(48.8% 0.243 264.376);
+    --secondary-color: #fff;
+
     --margin-left: 5px;
   }
-   h1,
-   h2,
-   h3,
-   h4,
-   h5,
-   h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6    {
     font-family: var(--font-primary);
   }
   .active {
-     color: #fff;
-     background-color: oklch(48.8% 0.243 264.376);
+     color: var(--secondary-color);
+     background-color: var(--primary-color);
   }
   .w-custom {
     width: calc(75vw + 100px);
@@ -31,7 +35,7 @@
     filter: opacity(0.5);
   }
   .nav-link:hover i {
-  color: #fff;
+  color: var(--secondary-color);
  }
   #mobile-navbar a {
     font-family: var(--font-secondary);
@@ -81,54 +85,53 @@
   }
   
   @media screen and (min-width: 768px) {
-   
-  .nav-link {
-  position: relative;
-  display: inline-block;
-  color: white;
-  overflow: hidden;
-}
+    .nav-link {
+      position: relative;
+      display: inline-block;
+      color: var(--secondary-color);
+      overflow: hidden;
+  }
 
-.nav-link::before {
-  content: attr(data-text); /* texte du lien */
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: auto;
-  color: #fff; /* couleur animée */
-  transition: left 0.3s ease;
-}
+  .nav-link::before {
+    content: attr(data-text); 
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: auto;
+    color: var(--secondary-color); 
+    transition: left 0.3s ease;
+  }
 
-.nav-link:hover::before {
-  left: 45px;
-  top: 18px;
-}
+  .nav-link:hover::before {
+    left: 45px;
+    top: 18px;
+  }
 
-.nav-link span {
-  display: none;
-  transition: transform 0.3s ease;
-}
+  .nav-link span {
+    display: none;
+    transition: transform 0.3s ease;
+  }
 
-.nav-link:hover span {
-  transform: translateX(100%);
-  opacity: 0;
-  display: inline-block;
-}
-svg {
-  width: 22px;
-  height: 22px;
-}
+  .nav-link:hover span {
+    transform: translateX(100%);
+    opacity: 0;
+    display: inline-block;
+  }
+  svg {
+    width: 22px;
+    height: 22px;
+  }
   
   }
   progress::-webkit-progress-bar {
-    background-color: #fff;
+    background-color: var(--secondary-color);
   }
   progress::-webkit-progress-value {
-    background-color: #1d4ed8;
+    background-color: var(--primary-color);
   }
   progress::-moz-progress-bar {
-    background-color: #1d4ed8;
+    background-color: var(--primary-color);
   }
 
 }
