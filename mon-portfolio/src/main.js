@@ -17,7 +17,7 @@ const servicesImages = document.querySelectorAll('#services img');
 const p = document.createElement('p');
 p.style.fontFamily = "var(--font-secondary)";
 p.style.textAlign = "center";
-p.style.color = "#fff";
+p.style.color = "#000";
 p.style.position = "absolute";
 p.style.top = "50px";
 p.style.left = "50px";
@@ -38,7 +38,7 @@ const addDescriptionToDesign = () => {
   designContainer.append(p);
   designImage.classList.toggle('animate-rotate');
   designImage.style.opacity = "0";
-  designContainer.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+  designContainer.style.backgroundColor = "rgba(127, 127, 255, 0.5)";
   designParagraphs.forEach(para => {
     para.style.display = "none";
   })
@@ -57,7 +57,7 @@ const addDescriptionToWordpress = () => {
     wordpressContainer.append(p);
     wordpressImage.classList.toggle('animate-rotate');
     wordpressImage.style.opacity = "0";
-    wordpressContainer.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+    wordpressContainer.style.backgroundColor = "rgba(127, 127, 255, 0.5)";
     wordpressParagraphs.forEach(para => {
     para.style.display = "none";
   })
@@ -76,7 +76,7 @@ const addDescriptionToMaintenance = () => {
     maintenanceContainer.append(p);
     maintenanceImage.classList.toggle('animate-rotate');
     maintenanceImage.style.opacity = "0";
-    maintenanceContainer.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+    maintenanceContainer.style.backgroundColor = "rgba(127, 127, 255, 0.5)";
     maintenanceParagraphs.forEach(para => {
     para.style.display = "none";
   })
@@ -95,7 +95,7 @@ const addDescriptionToSeo = () => {
     seoContainer.append(p);
     seoImage.classList.toggle('animate-rotate');
     seoImage.style.opacity = "0";
-    seoContainer.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+    seoContainer.style.backgroundColor = "rgba(127, 127, 255, 0.5)";
     seoParagraphs.forEach(para => {
     para.style.display = "none";
   })  
