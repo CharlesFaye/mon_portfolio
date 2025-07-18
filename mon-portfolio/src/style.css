@@ -121,5 +121,14 @@ svg {
 }
   
   }
+  progress::-webkit-progress-bar {
+    background-color: #fff;
+  }
+  progress::-webkit-progress-value {
+    background-color: #1d4ed8;
+  }
+  progress::-moz-progress-bar {
+    background-color: #1d4ed8;
+  }
 
 }
