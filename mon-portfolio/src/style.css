@@ -25,6 +25,9 @@
      color: var(--secondary-color);
      background-color: var(--primary-color);
   }
+  .filter-active {
+    color: var(--primary-color);
+  }
   .w-custom {
     width: calc(75vw + 100px);
   }
@@ -40,7 +43,7 @@
   #mobile-navbar a {
     font-family: var(--font-secondary);
   }
-
+ 
   .animate-fade-in {
     animation: fade-in 0.3s ease-in-out;
     transition: opacity 1s;

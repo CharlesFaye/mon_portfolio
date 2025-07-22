@@ -20,6 +20,7 @@
     <meta name="twitter:creator" content="@Bebouzo">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -43,7 +44,7 @@
             <li><a href="#about" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full  hover:bg-blue-700 hover:text-white" data-text="À Propos"><i class="bi bi-person md:text-2xl text-black"></i><span class="ml-2">À Propos</span></a></li>
             <li><a href="#services" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full hover:bg-blue-700 hover:text-white" data-text="Services"><i class="bi bi-hdd-stack md:text-2xl text-black"></i><span class="px-3">Services</span></a></li>
             <li><a href="#resume" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full  hover:bg-blue-700 hover:text-white" data-text="Compétences"><i class="bi bi-gear text-black md:text-2xl"></i><span class="px-3">Compétences</span></a></li>
-            <li><a href="#portfolio" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full hover:bg-blue-700 hover:text-white" data-text="Projets"><i class="bi bi-images text-black md:text-2xl"></i><span class="px-3">Projets</span></a></li>
+            <li><a href="#projects" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full hover:bg-blue-700 hover:text-white" data-text="Projets"><i class="bi bi-images text-black md:text-2xl"></i><span class="px-3">Projets</span></a></li>
             <li><a href="#contact" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full  hover:bg-blue-700 hover:text-white" data-text="Contacts"><i class="bi bi-envelope text-black md:text-2xl"></i><span class="px-3">Contact</span></a></li>
 
        </ul>
@@ -165,8 +166,95 @@
               </div>
             </div>
           </section>
+          <section id="projects" class="md:w-custom md:mx-auto">
+            <h2 aria-labelledby="projects" class="text-2xl md:text-3xl text-center mt-10 md:mt-16 mb-5 font-bold">Projets</h2>
+            <div class=" bg-gray-400 rounded-lg w-36 m-auto h-[1px] relative" aria-hidden="true">
+              <div class=" w-16 m-auto h-1 bg-blue-900 absolute -top-[0.1rem] left-10 rounded-lg" aria-hidden="true"></div>
+            </div>
+             <div id="filter-container" class="my-10">
+                <ul class="flex gap-10 justify-center">
+                  <li  class="filter-active font-[Roboto] sticky z-[9999] cursor-pointer" data-filter="*">Tous</li>
+                  <li class="font-[Roboto] sticky z-[9999] cursor-pointer" data-filter=".filter-app">App</li>
+                  <li class="font-[Roboto] sticky z-[9999] cursor-pointer" data-filter=".filter-web">Web</li>
+                </ul>
+              </div>
+              <div class="project w-[50vw] mx-auto md:w-full md:mx-auto md:pl-36 lg:w-full lg:mx-auto ">
+                <div class="relative project-item mb-10 filter-app group">
+              
+                    <img src="/images/dsmapp.jpg" alt="image de l'écran de démarrage de Djay Suñu Mbay" class="w-[400px] h-[400px] object-cover rounded-lg shadow-xl sticky z-[998]">
+                    <div class="absolute z-[9999] bg-black bg-opacity-60 inset-0 flex items-center justify-center gap-4 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300">
+                        <a href="/images/dsmapp.jpg" target="_blank" rel="noopener noreferrer" class="glightbox"><i class="bi bi-zoom-in  bg-white rounded-full px-3 py-2 "></i></a>
+                        <a href="http://" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right bg-white rounded-full px-3 py-2"></i></a>
+                       <a href="https://github.com/CharlesFaye/DSMApp" target="_blank" rel="noopener noreferrer"><i class="bi bi-github  bg-white rounded-full px-3 py-2"></i></a>
+                    </div>
+                  
+                  <div class="absolute z-[999]  bottom-0 bg-white  min-h-52 px-2 py-3">
+                    <h3 class="text-gray-800 text-center font-bold text-xl mb-2">Application Djay Suñu Mbay</h3>
+                    <p class="font-[Roboto] mb-2 text-gray-800">Une plateforme mobile destinée aux producteurs agricoles pour vendre et valoriser leurs récoltes en ligne. Elle favorise la mise en relation directe entre producteurs et acheteurs.</p>
+                    <ul class="flex flex-wrap gap-4 items-end">
+                      <li class=" text-blue-900 bg-blue-700 bg-opacity-30 text-sm px-4 py-1 rounded-full">Java</li>
+                      <li class="text-blue-900 text-sm bg-blue-700 bg-opacity-30 px-4 py-1 rounded-full">XML</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="relative group project-item mb-10  filter-web">
+                 <img src="/images/biblio.png" alt="une image du site web bibliothèque virtuelle." class="w-[400px] h-[400px] object-cover rounded-lg shadow-xl sticky z-[998]">
+                    <div class="absolute z-[9999] bg-black bg-opacity-60 inset-0 flex items-center justify-center gap-4 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300">
+                        <a href="/images/biblio.png" target="_blank" rel="noopener noreferrer" class="glightbox"><i class="bi bi-zoom-in  bg-white rounded-full px-3 py-2 "></i></a>
+                        <a href="https://biblio-omega.vercel.app/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right bg-white rounded-full px-3 py-2"></i></a>
+                       <a href="https://github.com/CharlesFaye/biblio" target="_blank" rel="noopener noreferrer"><i class="bi bi-github  bg-white rounded-full px-3 py-2"></i></a>
+                    </div>
+                    <div class="absolute z-[999]  bottom-0 bg-white  min-h-52 px-2 py-3">
+                    <h3 class="text-gray-800 text-center font-bold text-xl mb-2">Bibliothèque virtuelle</h3>
+                    <p class="font-[Roboto] mb-2 text-gray-800">Un outil numérique pour consulter, organiser et suivre des livres en ligne. Idéal pour encourager la lecture et gérer sa collection personnelle.</p>
+                    <ul class="flex gap-4 flex-wrap mt-5">
+                      <li class=" text-blue-900 bg-blue-700 bg-opacity-30 text-sm px-4 py-1 rounded-full">HTML</li>
+                      <li class="text-blue-900 text-sm bg-blue-700 bg-opacity-30 px-4 py-1 rounded-full">CSS</li>
+                      <li class="text-blue-900 text-sm bg-blue-700 bg-opacity-30 px-4 py-1 rounded-full">JavaScript</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="relative group project-item mb-10 filter-web">
+                  <img src="/images/dsmwebsite.png" alt="une image du site Djay Suñu Mbay." class="w-[400px] h-[400px] object-cover rounded-lg shadow-xl  sticky z-[998]">
+                    <div class="absolute z-[9999] bg-black bg-opacity-60 inset-0 flex items-center justify-center gap-4 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300">
+                        <a href="/images/dsmwebsite.png" target="_blank" rel="noopener noreferrer" class="glightbox"><i class="bi bi-zoom-in  bg-white rounded-full px-3 py-2 "></i></a>
+                        <a href="https://dsm-wp.vercel.app/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right bg-white rounded-full px-3 py-2"></i></a>
+                       <a href="https://github.com/CharlesFaye/DSM_WP_Site" target="_blank" rel="noopener noreferrer"><i class="bi bi-github  bg-white rounded-full px-3 py-2"></i></a>
+                    </div>
+                   <div class="absolute z-[999]  bottom-0 bg-white  min-h-52  px-2 py-3">
+                    <h3 class="text-gray-800 text-center font-bold text-xl mb-2">Site web Djay Suñu Mbay</h3>
+                    <p class="font-[Roboto] mb-2 text-gray-800">Un site conçu pour centraliser l’offre agricole locale et faciliter l’accès au marché. Il soutient les producteurs en leur offrant une vitrine numérique accessible.</p>
+                    <ul class="flex flex-wrap gap-4 mt-5">
+                      <li class=" text-blue-900 bg-blue-700 bg-opacity-30 text-sm px-4 py-1 rounded-full">Wordpress</li>
+                      <li class="text-blue-900 text-sm bg-blue-700 bg-opacity-30 px-4 py-1 rounded-full">Elementor</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="relative group project-item mb-10  filter-web">
+                   <img src="/images/btp.png" alt="une image du site web construction hub." class="w-[400px] h-[400px] object-cover rounded-lg shadow-xl sticky z-[998]">
+                    <div class="absolute z-[9999] bg-black bg-opacity-60 inset-0 flex items-center justify-center gap-4 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300">
+                        <a href="/images/btp.png" target="_blank" rel="noopener noreferrer" class="glightbox"><i class="bi bi-zoom-in  bg-white rounded-full px-3 py-2 "></i></a>
+                        <a href="https://dsm-wp.vercel.app/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right bg-white rounded-full px-3 py-2"></i></a>
+                       <a href="https://github.com/CharlesFaye/BTP_WP" target="_blank" rel="noopener noreferrer"><i class="bi bi-github  bg-white rounded-full px-3 py-2"></i></a>
+                    </div>
+                    <div class="absolute z-[999]  bottom-0 bg-white min-h-52 px-2 py-3">
+                    <h3 class="text-gray-800 text-center font-bold text-xl mb-2">Construction Hub</h3>
+                    <p class="font-[Roboto] mb-2 text-gray-800">Un site professionnel conçu pour présenter les services, réalisations et expertises de Construction Hub, une entreprise de construction.</p>
+                    <ul class="flex flex-wrap gap-4 mt-5">
+                      <li class=" text-blue-900 bg-blue-700 bg-opacity-30 text-sm px-4 py-1 rounded-full">Wordpress</li>
+                      <li class="text-blue-900 text-sm bg-blue-700 bg-opacity-30 px-4 py-1 rounded-full">Elementor</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+          </section>
+         
+       
     </main>
- 
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script type="module" src="/src/main.js"></script>
   </body>

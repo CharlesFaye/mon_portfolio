@@ -380,6 +380,37 @@ const simulateSmoothAnimation = () => {
 };
 simulateSmoothAnimation()
 
+
+const projectContainer = document.querySelector('.project');
+let iso;
+
+imagesLoaded(projectContainer, function() {
+  iso = new Isotope(projectContainer, {
+  itemSelector: '.project-item',
+  layoutMode: 'masonry',
+  masonry : {
+    gutter: 30
+  }
+});
+});
+
+
+const filterButtons = document.querySelectorAll('#filter-container li');
+
+
+filterButtons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    this.parentElement.querySelector('.filter-active').classList.remove('filter-active');
+    this.classList.add('filter-active');
+    let filterValue = this.getAttribute('data-filter');
+    iso.arrange({ filter: filterValue });
+  });
+});
+
+const lightbox = GLightbox({
+    selector: '.glightbox'
+  });
+
 /**
  * Init typed.js library
  */
