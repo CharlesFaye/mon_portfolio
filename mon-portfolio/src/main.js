@@ -268,7 +268,7 @@ const skills = [
     },
     {
       name: "Outils de développement (Vite.js, npm, Bash, ESLint, ...)",
-      level: 75
+      level: 65
     },
     {
       name: "Contrôle de version (Git, GitHub, ...)",
@@ -276,11 +276,11 @@ const skills = [
     },
     {
       name: "Déploiement & Hébergement (Vercel, Netlify, etc...)",
-      level: 70
+      level: 60
     },
     {
       name: "SEO & performance (Lighthouse, Google Analytics 4, ...)",
-      level: 70
+      level: 60
     }
 ];
 
@@ -311,7 +311,7 @@ const fillProgressBars = () => {
     for (const skill of skills) {
         const p = document.createElement('p');
         const span = document.createElement('span');
-        p.classList.add('absolute', 'top-[4px]');
+        p.classList.add('absolute', 'w-3/4', 'top-[2px]', 'text-sm', 'md:text-base', 'lg:text-base');
         span.classList.add('absolute', 'top-[5px]', 'right-[10px]', 'text-blue-700');
         p.textContent = skill.name;
         span.textContent = skill.level + "%";
