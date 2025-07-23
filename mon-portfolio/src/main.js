@@ -407,7 +407,10 @@ filterButtons.forEach(function(button) {
   });
 });
 
-const lightbox = GLightbox({
+/**
+ * Init Glightbox
+ */
+ const lightbox = GLightbox({
     selector: '.glightbox'
   });
 
