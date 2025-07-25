@@ -2,7 +2,7 @@ import { mobileNavbar, listIcon, anchorElements } from "./nav.js";
 
 
 
-  const skillHTML = document.querySelector('[data-skill="HTML"]');
+const skillHTML = document.querySelector('[data-skill="HTML"]');
 const skillCSS = document.querySelector('[data-skill="CSS"]');
 const skillJavaScript = document.querySelector('[data-skill="JavaScript"]');
 const skillTailwind = document.querySelector('[data-skill="TailwindCSS"]');
@@ -219,5 +219,9 @@ filterButtons.forEach(function(button) {
       loop: true
     });
   });
+
+  const dateElement = document.querySelector('.date');
+  const currentDate = new Date();
+  dateElement.textContent = currentDate.getFullYear();
 
 
