@@ -28,11 +28,11 @@
   </head>
   <body class="relative">
     <header class="">
-      <div class="flex justify-between items-center max-w-full md:relative md:border-b md:border-b-gray-200 md:py-5">
+      <div class="flex justify-between items-center max-w-full md:relative z-[999] md:py-5">
         <div id="dark-mode" class="md:absolute md:right-2 md:top-2">
           <i class="bi bi-brightness-low text-2xl cursor-pointer"></i>
         </div>
-        <div id="list-icon" class="m-2 md:hidden">
+        <div id="list-icon" class="m-2 md:hidden sticky z-[999]">
           <i class="bi bi-list text-lg text-white bg-blue-700 px-3 py-2 rounded-full cursor-pointer"></i>
        </div>
       </div>
@@ -50,15 +50,12 @@
   
     </header>
     <main>
-         <section id="hero-section" class="absolute top-11">
-            <figure class=" z-[9995]">
+         <section id="hero-section" class="absolute top-0">
                 <img src="/images/hero-image.jpg" alt="Une hero image d'un ordinateur" class="object-cover h-screen w-screen">
-                <figcaption class="hidden">Un ordinateur posé sur une table.</figcaption>
-            </figure>
 
             <div class="absolute top-52 left-12 md:top-96 lg:top-60 md:left-40 lg:left-52 z-[997] md:z-[999]">
               <h2 class="text-4xl md:text-6xl text-[#45505b] font-bold">Charles Simel Faye</h2>
-                <p class="text-2xl md:text-3xl mt-5 font-[Roboto] text-gray-700">Je suis <span id="typed" class="underline underline-offset-4 decoration-blue-700"></span></p>
+                <p class="text-2xl md:text-3xl mt-5 font-[Roboto] text-gray-900">Je suis <span id="typed" class="underline underline-offset-4 decoration-blue-700"></span></p>
                 <div class="mt-5 flex gap-5">
                 <a href="https://www.linkedin.com/in/charles-simel-faye-3382bb2aa/" target="_blank" ><i class="bi bi-linkedin text-base md:text-xl text-[#45505b]"></i></a>
                 <a href="https://github.com/CharlesFaye" target="_blank" rel="noopener noreferrer"><i class="bi bi-github text-base md:text-xl text-[#45505b]"></i></a>
