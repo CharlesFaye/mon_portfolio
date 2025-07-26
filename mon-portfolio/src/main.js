@@ -225,3 +225,35 @@ filterButtons.forEach(function(button) {
   dateElement.textContent = currentDate.getFullYear();
 
 
+
+  let navmenulinks = document.querySelectorAll('#navmenu a');
+  
+  /**
+   * Updates the active state of navigation menu links based on the current scroll position.
+   * Highlights the link corresponding to the section currently in view and adds a 'text-white' class to its icon.
+   * Removes the active state and 'text-white' class from links not in view.
+   *
+   * Assumes `navmenulinks` is a collection of anchor elements with hash references to page sections,
+   * and each link contains an <i> icon element.
+   */
+  function navmenuScrollspy() {
+    navmenulinks.forEach(navmenulink => {
+      if (!navmenulink.hash) return;
+      let section = document.querySelector(navmenulink.hash);
+      if (!section) return;
+      let position = window.scrollY + 200;
+      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
+        document.querySelectorAll('#navmenu a.active').forEach(link => link.classList.remove('active'));
+        navmenulink.classList.add('active');
+        navmenulink.querySelector('i').classList.add('text-white');
+      } else {
+        navmenulink.classList.remove('active');
+        navmenulink.querySelector('i').classList.remove('text-white');
+      }
+    })
+  }
+
+window.addEventListener('load', navmenuScrollspy);
+document.addEventListener('scroll', navmenuScrollspy);
+
+
