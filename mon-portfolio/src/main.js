@@ -1,4 +1,4 @@
-import { mobileNavbar, listIcon, anchorElements } from "./nav.js";
+import {navmenu, listIcon} from "./nav.js";
 
 
 
@@ -255,5 +255,32 @@ filterButtons.forEach(function(button) {
 
 window.addEventListener('load', navmenuScrollspy);
 document.addEventListener('scroll', navmenuScrollspy);
+
+
+  let scrollTop = document.querySelector('.scroll-top');
+
+  /**
+   * Toggles the visibility of the scroll-to-top button based on the window's scroll position.
+   * Removes the 'opacity-0' class from the scrollTop element when scrolled more than 100px,
+   * otherwise adds the 'opacity-0' class to hide it.
+   *
+   * @function
+   */
+  function toggleScrollTop() {
+    if (scrollTop) {
+      window.scrollY > 100 ? scrollTop.classList.remove('opacity-0') : scrollTop.classList.add('opacity-0');
+    }
+  }
+  
+  scrollTop.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+  window.addEventListener('load', toggleScrollTop);
+  document.addEventListener('scroll', toggleScrollTop);
 
 
