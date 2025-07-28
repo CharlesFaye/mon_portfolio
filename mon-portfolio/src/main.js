@@ -336,3 +336,13 @@ const skillsObserver = new IntersectionObserver(entries => {
 });
 
 skillsObserver.observe(skillsSection);
+
+  /**
+   * Preloader
+   */
+  const preloader = document.querySelector('#preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+      preloader.remove();
+    });
+  }
