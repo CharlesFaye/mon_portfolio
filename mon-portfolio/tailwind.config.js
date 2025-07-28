@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js, ts, tsx, jsx, html}",
   ],
+  darkMode: "class",
   theme: {
     extend: {},
   },

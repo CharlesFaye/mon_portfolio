@@ -27,11 +27,11 @@
     <link rel="stylesheet" href="src/style.css">
     <title>Vite App</title>
   </head>
-  <body class="relative">
+  <body class="relative bg-white text-black dark:bg-gray-900 dark:text-gray-200">
     <header class="">
       <div class="flex justify-between items-center max-w-full md:relative z-[999] md:py-5">
-        <div id="dark-mode" class="md:absolute md:right-2 md:top-2">
-          <i class="bi bi-brightness-low text-2xl cursor-pointer" aria-label="Basculer entre mode clair et mode sombre"></i>
+        <div id="dark-mode" class="md:absolute md:right-2 md:top-2 z-[999] ml-2">
+          <i class="bi bi-brightness-low text-xl cursor-pointer" aria-label="Basculer entre mode clair et mode sombre"></i>
         </div>
         <div id="list-icon" class="m-2 md:hidden sticky z-[999]">
           <i class="bi bi-list text-lg text-white bg-blue-700 px-3 py-2 rounded-full cursor-pointer"></i>
@@ -39,7 +39,7 @@
       </div>
       
       <nav id="navmenu" class="hidden animate-fade-in md:flex md:fixed md:top-0 md:bottom-0 md:left-0 md:right-0 md:w-1/2 md:z-[999] sticky z-[9999]">
-         <ul class="flex flex-col gap-10 md:gap-5 justify-center items-center w-3/4 h-screen bg-white p-2 md:bg-transparent md:items-start">
+         <ul class="flex flex-col gap-10 md:gap-5 justify-center items-center w-3/4 h-screen bg-white p-2 md:bg-transparent md:items-start dark:bg-gray-900 md:dark:bg-transparent dark:text-white">
             <li><a href="#hero" class="nav-link active bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full hover:bg-blue-700 hover:text-white" data-text="Accueil"><i class="bi bi-house text-black md:text-2xl"></i><span class="px-3">Accueil</span></a></li>
             <li><a href="#about" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full  hover:bg-blue-700 hover:text-white" data-text="À Propos"><i class="bi bi-person md:text-2xl text-black"></i><span class="ml-2">À Propos</span></a></li>
             <li><a href="#services" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full hover:bg-blue-700 hover:text-white" data-text="Services"><i class="bi bi-hdd-stack md:text-2xl text-black"></i><span class="px-3">Services</span></a></li>
@@ -52,16 +52,20 @@
     </header>
     <main>
          <section id="hero" class="-mt-11">
-                <img src="/images/hero-image.jpg" alt="Une hero image d'un ordinateur" class="object-cover h-screen w-screen">
+          <div class="relative">
+            <img src="/images/hero-image.jpg" alt="Une hero image d'un ordinateur" class="object-cover h-screen w-screen filter opacity-30">
+            <div class="absolute inset-0 bg-white/40 dark:bg-gray-900/70"></div>
+          </div>
+                
 
             <div class="hero-content opacity-0  absolute top-52 left-12 md:top-32 lg:top-52 md:left-40 lg:left-52 z-[997] md:z-[999]">
-              <h2 class="text-4xl md:text-6xl text-[#45505b] font-bold">Charles Simel Faye</h2>
-                <p class="text-2xl md:text-3xl mt-5 font-[Roboto] text-gray-900">Je suis <span id="typed" class="underline underline-offset-4 decoration-blue-700"></span></p>
+              <h2 class="text-4xl md:text-6xl text-[#45505b] font-bold dark:text-violet-500">Charles Simel Faye</h2>
+                <p class="text-2xl md:text-3xl mt-5 font-[Roboto] text-gray-900 dark:text-gray-300">Je suis <span id="typed" class="underline underline-offset-4 decoration-blue-700"></span></p>
                 <div class="mt-5 flex gap-5">
-                <a href="https://www.linkedin.com/in/charles-simel-faye-3382bb2aa/" target="_blank" ><i class="bi bi-linkedin text-base md:text-xl text-[#45505b]"></i></a>
-                <a href="https://github.com/CharlesFaye" target="_blank" rel="noopener noreferrer"><i class="bi bi-github text-base md:text-xl text-[#45505b]"></i></a>
-                <a href="https://www.instagram.com/bebouzo" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram text-base md:text-xl text-[#45505b]"></i></a>
-                <a href="https://x.com/Bebouzo" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-twitter-x text-[#45505b] mt-[6px] md:mt-[6px]" viewBox="0 0 16 16">
+                <a href="https://www.linkedin.com/in/charles-simel-faye-3382bb2aa/" target="_blank" ><i class="bi bi-linkedin text-base md:text-xl text-[#45505b] dark:text-gray-300"></i></a>
+                <a href="https://github.com/CharlesFaye" target="_blank" rel="noopener noreferrer"><i class="bi bi-github text-base md:text-xl text-[#45505b] dark:text-gray-300"></i></a>
+                <a href="https://www.instagram.com/bebouzo" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram text-base md:text-xl text-[#45505b] dark:text-gray-300"></i></a>
+                <a href="https://x.com/Bebouzo" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-twitter-x text-[#45505b] dark:text-gray-300 mt-[6px] md:mt-[6px]" viewBox="0 0 16 16">
                 <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
                 </svg></a>
               </div>
@@ -93,7 +97,8 @@
               <p class="max-w-full px-5 py-5 text-justify md:m-auto md:w-3/4 font-[Roboto]">Découvrez les services que je propose pour vous aider à créer, améliorer et faire évoluer votre présence en ligne. De la conception sur mesure à l’optimisation SEO, chaque service est pensé pour répondre à vos besoins spécifiques.</p>
               <div class="flex flex-col justify-center items-center md:flex-row md:justify-center md:flex-wrap gap-5">
                 <div id="design-container" class="relative group hover:bg-blue-700 hover:bg-opacity-50 cursor-pointer">
-                  <img src="/images/domenico-loia-hGV2TfOh0ns-unsplash.jpg" alt="image d'un setup."  class="max-w-full p-5 w-[400px] h-[400px] object-cover sticky z-[9997] group-hover:opacity-0" loading="lazy">
+                    <img src="/images/domenico-loia-hGV2TfOh0ns-unsplash.jpg" alt="image d'un setup."  class="max-w-full p-5 w-[400px] h-[400px] object-cover sticky z-[9997] group-hover:opacity-0 filter opacity-30 dark:grayscale dark:saturate-50" loading="lazy">
+                   
                       <div class="border-s-2 border-s-blue-700 border-b-2 border-blue-700 opacity-75 absolute z-[9999]  bottom-10 left-10 w-16 h-16" aria-hidden="true"></div>
                       <div class="border-e-2 border-e-blue-700 border-t-2 border-blue-700 opacity-75 absolute z-[9999] top-10 right-10 w-16 h-16" aria-hidden="true"></div>
                       <p class="text-2xl font-[Roboto] italic absolute top-36 left-10 md:left-24 w-3/4 z-[9999] group-hover:opacity-0">Création de  sites web sur mesure</p>
@@ -102,7 +107,7 @@
                        top-14 left-6 md:left-12 w-[300px] h-auto  group-hover:animate-rotate group-hover:opacity-100 transition duration-300">Je conçois des sites web entièrement personnalisés, adaptés à vos besoins spécifiques. Chaque projet est développé en partant de zéro pour garantir une solution unique, moderne et responsive. J’accorde une attention particulière à l’expérience utilisateur et au design. Ensemble, nous bâtissons une présence en ligne fidèle à votre image. </p>
                 </div>
                 <div id="wordpress-container" class="relative group hover:bg-blue-700 hover:bg-opacity-50 cursor-pointer">
-                      <img src="/images/justin-morgan-ZjX-z2Q5zrk-unsplash.jpg" alt="tableau de bord de Wordpress." class="max-w-full p-5 w-[400px] h-[400px] object-cover sticky z-[9997] group-hover:opacity-0" loading="lazy">
+                      <img src="/images/justin-morgan-ZjX-z2Q5zrk-unsplash.jpg" alt="tableau de bord de Wordpress." class="max-w-full p-5 w-[400px] h-[400px] object-cover sticky z-[9997] group-hover:opacity-0 filter opacity-30 dark:grayscale dark:saturate-50" loading="lazy">
                       <div class="border-s-2 border-s-blue-700 border-b-2 border-blue-700 opacity-75 absolute z-[9999]  bottom-10 left-10 w-16 h-16" aria-hidden="true"></div>
                       <div class="border-e-2 border-e-blue-700 border-t-2 border-blue-700 opacity-75 absolute z-[9999] top-10 right-10 w-16 h-16" aria-hidden="true"></div>
                       <p class="text-2xl font-[Roboto] italic absolute z-[9999] top-36 left-10 md:left-24 w-3/4 group-hover:opacity-0">Intégration et Personnalisation CMS (Wordpress)</p>
@@ -110,7 +115,7 @@
                        top-14 left-6 md:left-12 w-[300px] h-auto  group-hover:animate-rotate group-hover:opacity-100 transition duration-300">Je crée des sites professionnels avec WordPress, faciles à gérer et évolutifs. Grâce à ce CMS populaire, vous bénéficiez d’une interface intuitive et de nombreuses fonctionnalités. Je personnalise votre site selon vos objectifs et votre identité visuelle. Idéal pour les blogs, portfolios, sites vitrines ou boutiques en ligne.</p>
                 </div>
                 <div id="maintenance-container" class="relative group hover:bg-blue-700 hover:bg-opacity-50 cursor-pointer">
-                  <img src="/images/markus-spiske-VO5w2Ida70s-unsplash.jpg" alt="panneau de signalisation." class="max-w-full p-5 w-[400px] h-[400px] object-cover sticky z-[9997] group-hover:opacity-0" loading="lazy">
+                  <img src="/images/markus-spiske-VO5w2Ida70s-unsplash.jpg" alt="panneau de signalisation." class="max-w-full p-5 w-[400px] h-[400px] object-cover sticky z-[9997] group-hover:opacity-0 filter opacity-30 dark:grayscale dark:saturate-50" loading="lazy">
                       <div class="border-s-2 border-s-blue-700 border-b-2 border-blue-700 opacity-75 absolute z-[9999]  bottom-10 left-10 w-16 h-16" aria-hidden="true"></div>
                       <div class="border-e-2 border-e-blue-700 border-t-2 border-blue-700 opacity-75 absolute z-[9999] top-10 right-10 w-16 h-16" aria-hidden="true"></div>
                       <p class="text-2xl font-[Roboto] italic absolute z-[9999] top-36 left-10 md:left-16 w-3/4 group-hover:opacity-0">Maintenance & Amélioration</p>
@@ -118,7 +123,7 @@
                        top-14 left-6 md:left-12 w-[300px] h-auto  group-hover:animate-rotate group-hover:opacity-100 transition duration-300">Je vous accompagne dans la maintenance régulière de votre site : mises à jour, corrections de bugs, sauvegardes et surveillance. J’interviens également pour ajouter de nouvelles fonctionnalités ou améliorer le design. Votre site reste ainsi performant, sécurisé et à jour. Un service indispensable pour préserver votre investissement.</p>
                 </div>
                 <div id="seo-container" class="relative group hover:bg-blue-700 hover:bg-opacity-50 cursor-pointer">
-                   <img src="/images/stephen-phillips-hostreviews-co-uk-shr_Xn8S8QU-unsplash.jpg" alt="tableau de bord relatif à l'optimisation SEO." class="max-w-full p-5 w-[400px] h-[400px] object-cover sticky z-[9997] group-hover:opacity-0" loading="lazy">
+                   <img src="/images/stephen-phillips-hostreviews-co-uk-shr_Xn8S8QU-unsplash.jpg" alt="tableau de bord relatif à l'optimisation SEO." class="max-w-full p-5 w-[400px] h-[400px] object-cover sticky z-[9997] group-hover:opacity-0 filter opacity-30 dark:grayscale dark:saturate-50" loading="lazy">
                       <div class="border-s-2 border-s-blue-700 border-b-2 border-blue-700 opacity-75 absolute z-[9999]  bottom-10 left-10 w-16 h-16" aria-hidden="true"></div>
                       <div class="border-e-2 border-e-blue-700 border-t-2 border-blue-700 opacity-75 absolute z-[9999] top-10 right-10 w-16 h-16" aria-hidden="true"></div>
                       <p class="text-2xl font-[Roboto]  italic absolute z-[9999] top-36 left-10 md:left-24 w-3/4 group-hover:opacity-0">Optimisation SEO & Performance</p>
@@ -132,44 +137,44 @@
             <div class=" bg-gray-400 rounded-lg w-36 m-auto h-[1px] relative" aria-hidden="true">
               <div class=" w-16 m-auto h-1 bg-blue-900 absolute -top-[0.1rem] left-10 rounded-lg" aria-hidden="true"></div>
             </div>
-            <div class="mt-10 mb-5 w-[50vw] md:w-[30vw] mx-auto">
+            <div class="flex justify-center items-center my-10">
               <q class="italic font-[Roboto]">
                 Le savoir faire vaut mieux que le savoir.
               </q>
             </div>
             <h3 class="text-center md:text-2xl">Langages && Frameworks</h3>
             <div id="skills" class="flex flex-col justify-center items-center md:flex-row md:flex-wrap md:justify-center gap-5 md:w-full lg:w-full md:mx-auto p-10">
-              <div data-skill="HTML" class="relative bg-slate-100 pt-8 pb-3 px-3 rounded-lg">
+              <div data-skill="HTML" class="relative bg-slate-100 dark:bg-slate-800 pt-8 pb-3 px-3 rounded-lg">
                 <progress id="html-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" value="0" max="100" class="w-[75vw] p-[0.2rem] md:w-[35vw]"></progress>
               </div>
-              <div data-skill="CSS" class="relative bg-slate-100 pt-8 pb-3 px-3 rounded-lg">
+              <div data-skill="CSS" class="relative bg-slate-100 dark:bg-slate-800 pt-8 pb-3 px-3 rounded-lg">
                 <progress id="css-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" value="0" max="100" class="w-[75vw] p-[0.2rem] md:w-[35vw]"></progress>
               </div>
-              <div data-skill="JavaScript" class="relative bg-slate-100 pt-8 pb-3 px-3 rounded-lg">
+              <div data-skill="JavaScript" class="relative bg-slate-100 dark:bg-slate-800 pt-8 pb-3 px-3 rounded-lg">
                 <progress id="js-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" value="0" max="100" class="w-[75vw] p-[0.2rem] md:w-[35vw]"></progress>
               </div>
-              <div data-skill="TailwindCSS"  class="relative bg-slate-100 pt-8 pb-3 px-3 rounded-lg">
+              <div data-skill="TailwindCSS"  class="relative bg-slate-100 dark:bg-slate-800 pt-8 pb-3 px-3 rounded-lg">
                 <progress id="tailwind-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" value="0" max="100" class="w-[75vw] p-[0.2rem] md:w-[35vw]"></progress>
               </div>
-              <div data-skill="Wordpress" class="relative bg-slate-100 pt-8 pb-3 px-3 rounded-lg">
+              <div data-skill="Wordpress" class="relative bg-slate-100 dark:bg-slate-800 pt-8 pb-3 px-3 rounded-lg">
                 <progress id="wordpress-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" value="0" max="100" class="w-[75vw] p-[0.2rem] md:w-[35vw]"></progress>
               </div>
-              <div data-skill="mobile" class="relative bg-slate-100 pt-8 pb-3 px-3 rounded-lg">
+              <div data-skill="mobile" class="relative bg-slate-100 dark:bg-slate-800 pt-8 pb-3 px-3 rounded-lg">
                 <progress id="mobile-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" value="0" max="100" class="w-[75vw] p-[0.2rem] md:w-[35vw]"></progress>
               </div>
             </div>
             <h3 class="text-center md:text-2xl mt-10">Outils && Technologies</h3>
             <div id="skills" class="flex flex-col justify-center items-center md:flex-row md:flex-wrap md:justify-center gap-5 md:w-full lg:w-full md:mx-auto p-10">
-              <div data-skill="dev-tools" class="relative bg-slate-100 pt-12 pb-3 px-3 rounded-lg">
+              <div data-skill="dev-tools" class="relative bg-slate-100 dark:bg-slate-800 pt-12 pb-3 px-3 rounded-lg">
                 <progress id="dev-tools-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" value="0" max="100" class="w-[75vw] p-[0.2rem] md:w-[35vw]"></progress>
               </div>
-              <div data-skill="version-control" class="relative bg-slate-100 pt-12 pb-3 px-3 rounded-lg">
+              <div data-skill="version-control" class="relative bg-slate-100 dark:bg-slate-800 pt-12 pb-3 px-3 rounded-lg">
                 <progress id="version-control-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" value="0" max="100" class="w-[75vw] p-[0.2rem] md:w-[35vw]"></progress>
               </div>
-              <div data-skill="deployment-hosting" class="relative bg-slate-100 pt-12 pb-3 px-3 rounded-lg">
+              <div data-skill="deployment-hosting" class="relative bg-slate-100 dark:bg-slate-800 pt-12 pb-3 px-3 rounded-lg">
                 <progress id="deployment-hosting-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" value="0" max="100" class="w-[75vw] p-[0.2rem] md:w-[35vw]"></progress>
               </div>
-              <div data-skill="seo-performance"  class="relative bg-slate-100 pt-12 pb-3 px-3 rounded-lg">
+              <div data-skill="seo-performance"  class="relative bg-slate-100 dark:bg-slate-800 pt-12 pb-3 px-3 rounded-lg">
                 <progress id="seo-performance-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" value="0" max="100" class="w-[75vw] p-[0.2rem] md:w-[35vw]"></progress>
               </div>
             </div>
@@ -191,8 +196,8 @@
               
                     <img src="/images/dsmapp.jpg" alt="image de l'écran de démarrage de Djay Suñu Mbay" class="w-[400px] h-[400px] object-cover rounded-lg shadow-xl sticky z-[998]">
                     <div class="absolute z-[9999] bg-black bg-opacity-60 inset-0 flex items-center justify-center gap-4 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300">
-                        <a href="/images/dsmapp.jpg" target="_blank" rel="noopener noreferrer" class="glightbox"><i class="bi bi-zoom-in bg-white rounded-full px-3 py-2 "></i></a>
-                       <a href="https://github.com/CharlesFaye/DSMApp" target="_blank" rel="noopener noreferrer"><i class="bi bi-github  bg-white rounded-full px-3 py-2"></i></a>
+                        <a href="/images/dsmapp.jpg" target="_blank" rel="noopener noreferrer" class="glightbox"><i class="bi bi-zoom-in bg-white dark:bg-gray-900 rounded-full px-3 py-2 "></i></a>
+                       <a href="https://github.com/CharlesFaye/DSMApp" target="_blank" rel="noopener noreferrer"><i class="bi bi-github  bg-white dark:bg-gray-900 rounded-full px-3 py-2"></i></a>
                     </div>
                   
                   <div class="absolute z-[999]  bottom-0 bg-white  min-h-52 px-2 py-3">
@@ -207,9 +212,9 @@
                 <div class="relative group project-item mb-10  filter-web">
                  <img src="/images/biblio.png" alt="une image du site web bibliothèque virtuelle." class="w-[400px] h-[400px] object-cover rounded-lg shadow-xl sticky z-[998]">
                     <div class="absolute z-[9999] bg-black bg-opacity-60 inset-0 flex items-center justify-center gap-4 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300">
-                        <a href="/images/biblio.png" target="_blank" rel="noopener noreferrer" class="glightbox"><i class="bi bi-zoom-in  bg-white rounded-full px-3 py-2 "></i></a>
-                        <a href="https://biblio-omega.vercel.app/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right bg-white rounded-full px-3 py-2"></i></a>
-                       <a href="https://github.com/CharlesFaye/biblio" target="_blank" rel="noopener noreferrer"><i class="bi bi-github  bg-white rounded-full px-3 py-2"></i></a>
+                        <a href="/images/biblio.png" target="_blank" rel="noopener noreferrer" class="glightbox"><i class="bi bi-zoom-in  bg-white dark:bg-gray-900 rounded-full px-3 py-2 "></i></a>
+                        <a href="https://biblio-omega.vercel.app/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right bg-white dark:bg-gray-900 rounded-full px-3 py-2"></i></a>
+                       <a href="https://github.com/CharlesFaye/biblio" target="_blank" rel="noopener noreferrer"><i class="bi bi-github  bg-white dark:bg-gray-900 rounded-full px-3 py-2"></i></a>
                     </div>
                     <div class="absolute z-[999]  bottom-0 bg-white  min-h-52 px-2 py-3">
                     <h3 class="text-gray-800 text-center font-bold text-lg md:text-xl lg:text-xl mb-2">Bibliothèque virtuelle</h3>
@@ -224,9 +229,9 @@
                 <div class="relative group project-item mb-10 filter-web">
                   <img src="/images/dsmwebsite.png" alt="une image du site Djay Suñu Mbay." class="w-[400px] h-[400px] object-cover rounded-lg shadow-xl  sticky z-[998]">
                     <div class="absolute z-[9999] bg-black bg-opacity-60 inset-0 flex items-center justify-center gap-4 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300">
-                        <a href="/images/dsmwebsite.png" target="_blank" rel="noopener noreferrer" class="glightbox"><i class="bi bi-zoom-in  bg-white rounded-full px-3 py-2 "></i></a>
-                        <a href="https://dsm-wp.vercel.app/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right bg-white rounded-full px-3 py-2"></i></a>
-                       <a href="https://github.com/CharlesFaye/DSM_WP_Site" target="_blank" rel="noopener noreferrer"><i class="bi bi-github  bg-white rounded-full px-3 py-2"></i></a>
+                        <a href="/images/dsmwebsite.png" target="_blank" rel="noopener noreferrer" class="glightbox"><i class="bi bi-zoom-in  bg-white dark:bg-gray-900 rounded-full px-3 py-2 "></i></a>
+                        <a href="https://dsm-wp.vercel.app/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right bg-white dark:bg-gray-900 rounded-full px-3 py-2"></i></a>
+                       <a href="https://github.com/CharlesFaye/DSM_WP_Site" target="_blank" rel="noopener noreferrer"><i class="bi bi-github  bg-white dark:bg-gray-900 rounded-full px-3 py-2"></i></a>
                     </div>
                    <div class="absolute z-[999]  bottom-0 bg-white  min-h-52  px-2 py-3">
                     <h3 class="text-gray-800 text-center font-bold text-lg md:text-xl lg:text-xl mb-2">Site web Djay Suñu Mbay</h3>
@@ -240,8 +245,8 @@
                 <div class="relative group project-item mb-10  filter-web">
                    <img src="/images/btp.png" alt="une image du site web construction hub." class="w-[400px] h-[400px] object-cover rounded-lg shadow-xl sticky z-[998]">
                     <div class="absolute z-[9999] bg-black bg-opacity-60 inset-0 flex items-center justify-center gap-4 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300">
-                        <a href="/images/btp.png" target="_blank" rel="noopener noreferrer" class="glightbox"><i class="bi bi-zoom-in  bg-white rounded-full px-3 py-2 "></i></a>
-                       <a href="https://github.com/CharlesFaye/BTP_WP" target="_blank" rel="noopener noreferrer"><i class="bi bi-github  bg-white rounded-full px-3 py-2"></i></a>
+                        <a href="/images/btp.png" target="_blank" rel="noopener noreferrer" class="glightbox"><i class="bi bi-zoom-in  bg-white dark:bg-gray-900 rounded-full px-3 py-2 "></i></a>
+                       <a href="https://github.com/CharlesFaye/BTP_WP" target="_blank" rel="noopener noreferrer"><i class="bi bi-github  bg-white dark:bg-gray-900 rounded-full px-3 py-2"></i></a>
                     </div>
                     <div class="absolute z-[999]  bottom-0 bg-white min-h-52 px-2 py-3">
                     <h3 class="text-gray-800 text-center font-bold text-lg md:text-xl lg:text-xl mb-2">Construction Hub</h3>
@@ -266,16 +271,16 @@
               <div class="flex flex-col flex-wrap justify-center items-center gap-10  md:flex-row md:justify-between md:items-center mt-10">
                 <address class="flex flex-col gap-10">
                   <div class="flex items-center gap-3">
-                    <i class="bi bi-envelope bg-blue-700 bg-opacity-30 text-blue-950 px-3 py-2 rounded-md"></i>
-                    <p class="font-[Roboto] font-bold">Email<br><span class="font-[Roboto] text-gray-800 font-normal">charlesfaye99@gmail.com</span></p>
+                    <i class="bi bi-envelope bg-blue-700 bg-opacity-30 text-blue-950 dark:text-gray-200 px-3 py-2 rounded-md"></i>
+                    <p class="font-[Roboto] font-bold">Email<br><span class="font-[Roboto] text-gray-800 dark:text-gray-200 font-normal">charlesfaye99@gmail.com</span></p>
                   </div>
                   <div class="flex items-center gap-3">
-                    <i class="bi bi-telephone bg-blue-700 bg-opacity-30 text-blue-950 px-3 py-2 rounded-md"></i>
-                    <p class="font-[Roboto] font-bold">Téléphone<br><span class="font-[Roboto] text-gray-800 font-normal">+212 0604887615</span></p>
+                    <i class="bi bi-telephone bg-blue-700 bg-opacity-30 text-blue-950 dark:text-gray-200 px-3 py-2 rounded-md"></i>
+                    <p class="font-[Roboto] font-bold">Téléphone<br><span class="font-[Roboto] text-gray-800 dark:text-gray-200 font-normal">+212 0604887615</span></p>
                   </div>
                   <div class="flex items-center gap-3">
-                    <i class="bi bi-geo-alt bg-blue-700 bg-opacity-30 text-blue-950 px-3 py-2 rounded-md"></i>
-                    <p class="font-[Roboto] font-bold">Localisation<br><span class="font-[Roboto] text-gray-800 font-normal">Sidi Maarouf, Casablanca</span></p>
+                    <i class="bi bi-geo-alt bg-blue-700 bg-opacity-30 text-blue-950 dark:text-gray-200 px-3 py-2 rounded-md"></i>
+                    <p class="font-[Roboto] font-bold">Localisation<br><span class="font-[Roboto] text-gray-800 dark:text-gray-200 font-normal">Sidi Maarouf, Casablanca</span></p>
                   </div>
                   
                 </address>
@@ -301,14 +306,14 @@
                 </div>
               </div>
           </section>
-          <section class="bg-blue-700 bg-opacity-30 mt-32 p-5 flex flex-col flex-wrap justify-center items-center gap-5 md:flex-row md:justify-between">
+          <section class="bg-blue-700  bg-opacity-30 mt-32 p-5 flex flex-col flex-wrap justify-center items-center gap-5 md:flex-row md:justify-between">
             <h2 class="text-wl md:text-2xl order-1 md:order-1">Charles Simel Faye</h2>
             <p class="font-[Roboto] order-3 md:order-2">&copy; <span class="date mr-1"></span>Portfolio de Charles S. Faye</p>
             <div class="flex flex-row gap-2 order-2 md:order-3">
-              <a href="https://www.linkedin.com/in/charles-simel-faye-3382bb2aa/" target="_blank" ><i class="bi bi-linkedin text-base md:text-xl text-[#45505b]"></i></a>
-                <a href="https://github.com/CharlesFaye" target="_blank" rel="noopener noreferrer"><i class="bi bi-github text-base md:text-xl text-[#45505b]"></i></a>
-                <a href="https://www.instagram.com/bebouzo" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram text-base md:text-xl text-[#45505b]"></i></a>
-                <a href="https://x.com/Bebouzo" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-twitter-x text-[#45505b] mt-[6px] md:mt-[6px]" viewBox="0 0 16 16">
+              <a href="https://www.linkedin.com/in/charles-simel-faye-3382bb2aa/" target="_blank" ><i class="bi bi-linkedin text-base md:text-xl text-[#45505b] dark:text-gray-300"></i></a>
+                <a href="https://github.com/CharlesFaye" target="_blank" rel="noopener noreferrer"><i class="bi bi-github text-base md:text-xl text-[#45505b] dark:text-gray-300"></i></a>
+                <a href="https://www.instagram.com/bebouzo" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram text-base md:text-xl text-[#45505b] dark:text-gray-300"></i></a>
+                <a href="https://x.com/Bebouzo" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-twitter-x text-[#45505b] dark:text-gray-300 mt-[6px] md:mt-[6px]" viewBox="0 0 16 16">
                 <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
                 </svg></a>
             </div>

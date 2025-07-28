@@ -31,12 +31,7 @@
   .w-custom {
     width: calc(75vw + 100px);
   }
-  #hero img {
-    filter: opacity(0.3);
-  }
-  #services img {
-    filter: opacity(0.5);
-  }
+ 
   .nav-link:hover i {
   color: var(--secondary-color);
  }
