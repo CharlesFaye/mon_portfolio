@@ -168,10 +168,10 @@ const simulateSmoothAnimation = () => {
             } else {
                 clearInterval(interval);
             }
-        }, 10);
+        }, 20);
     });
 };
-simulateSmoothAnimation()
+
 
 
 const projectContainer = document.querySelector('.project');
@@ -268,10 +268,10 @@ document.addEventListener('scroll', navmenuScrollspy);
    */
   function toggleScrollTop() {
     if (scrollTop) {
-      window.scrollY > 100 ? scrollTop.classList.remove('opacity-0') : scrollTop.classList.add('opacity-0');
+      window.scrollY < 100 ? scrollTop.classList.add('opacity-0') : scrollTop.classList.remove('opacity-0');
     }
   }
-  
+
   scrollTop.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({
@@ -283,4 +283,56 @@ document.addEventListener('scroll', navmenuScrollspy);
   window.addEventListener('load', toggleScrollTop);
   document.addEventListener('scroll', toggleScrollTop);
 
+  const heroContent = document.querySelector('.hero-content');
 
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.remove('opacity-0');
+        entry.target.classList.add('animate-zoom-out');
+        if (entry.isIntersecting) observer.unobserve(entry.target)
+    })
+  },
+{
+  threshold: 1
+})
+
+observer.observe(heroContent)
+
+const intersectElements = document.querySelectorAll('.intersect-element');
+
+
+const newObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        entry.target.classList.remove('opacity-0');
+        entry.target.classList.add('animate-fadeInUp');
+        newObserver.unobserve(entry.target)
+      }
+  })
+},
+{
+  threshold: 0.1,
+  rootMargin: "0px 0px -10px 0px"
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  intersectElements.forEach(element => {
+    newObserver.observe(element)
+  });
+});
+
+
+const skillsSection = document.getElementById('skills');
+
+const skillsObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      simulateSmoothAnimation()
+      entry.target.classList.remove('opacity-0');
+      skillsObserver.unobserve(entry.target)
+    }
+  })
+});
+
+skillsObserver.observe(skillsSection);

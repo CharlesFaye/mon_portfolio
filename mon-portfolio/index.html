@@ -43,7 +43,7 @@
             <li><a href="#hero" class="nav-link active bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full hover:bg-blue-700 hover:text-white" data-text="Accueil"><i class="bi bi-house text-black md:text-2xl"></i><span class="px-3">Accueil</span></a></li>
             <li><a href="#about" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full  hover:bg-blue-700 hover:text-white" data-text="À Propos"><i class="bi bi-person md:text-2xl text-black"></i><span class="ml-2">À Propos</span></a></li>
             <li><a href="#services" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full hover:bg-blue-700 hover:text-white" data-text="Services"><i class="bi bi-hdd-stack md:text-2xl text-black"></i><span class="px-3">Services</span></a></li>
-            <li><a href="#resume" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full  hover:bg-blue-700 hover:text-white" data-text="Compétences"><i class="bi bi-gear text-black md:text-2xl"></i><span class="px-3">Compétences</span></a></li>
+            <li><a href="#skills" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full  hover:bg-blue-700 hover:text-white" data-text="Compétences"><i class="bi bi-gear text-black md:text-2xl"></i><span class="px-3">Compétences</span></a></li>
             <li><a href="#projects" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full hover:bg-blue-700 hover:text-white" data-text="Projets"><i class="bi bi-images text-black md:text-2xl"></i><span class="px-3">Projets</span></a></li>
             <li><a href="#contact" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full  hover:bg-blue-700 hover:text-white" data-text="Contacts"><i class="bi bi-envelope text-black md:text-2xl"></i><span class="px-3">Contact</span></a></li>
 
@@ -54,7 +54,7 @@
          <section id="hero" class="-mt-11">
                 <img src="/images/hero-image.jpg" alt="Une hero image d'un ordinateur" class="object-cover h-screen w-screen">
 
-            <div class="absolute top-52 left-12 md:top-32 lg:top-52 md:left-40 lg:left-52 z-[997] md:z-[999]">
+            <div class="hero-content opacity-0  absolute top-52 left-12 md:top-32 lg:top-52 md:left-40 lg:left-52 z-[997] md:z-[999]">
               <h2 class="text-4xl md:text-6xl text-[#45505b] font-bold">Charles Simel Faye</h2>
                 <p class="text-2xl md:text-3xl mt-5 font-[Roboto] text-gray-900">Je suis <span id="typed" class="underline underline-offset-4 decoration-blue-700"></span></p>
                 <div class="mt-5 flex gap-5">
@@ -67,12 +67,12 @@
               </div>
             </div>
           </section>
-          <section id="about" class="md:w-custom md:mx-auto">
+          <section id="about" class="md:w-custom md:mx-auto intersect-element">
             <h2 class="text-2xl md:text-3xl text-center mt-10 md:mt-16 mb-5 font-bold" aria-labelledby="about">À Propos de Moi</h2>
             <div class=" bg-gray-400 rounded-lg w-36 m-auto h-[1px] relative" aria-hidden="true">
               <div class=" w-16 m-auto h-1 bg-blue-900 absolute -top-[0.1rem] left-10 rounded-lg" aria-hidden="true"></div>
             </div>
-            <p class="max-w-full p-5 text-justify md:m-auto md:w-3/4 md:text-center font-[Roboto]">Passionné par le développement web, je conçois des sites modernes, responsives et centrés sur l'expérience utilisateur. Curieux, rigoureux et toujours prêt à relever de nouveaux défis, je continue d’apprendre chaque jour pour améliorer mes compétences. Mon objectif : créer des solutions web efficaces, esthétiques et accessibles à tous.</p>
+            <p class="max-w-full p-5 text-justify md:m-auto md:w-3/4 md:text-center font-[Roboto">Passionné par le développement web, je conçois des sites modernes, responsives et centrés sur l'expérience utilisateur. Curieux, rigoureux et toujours prêt à relever de nouveaux défis, je continue d’apprendre chaque jour pour améliorer mes compétences. Mon objectif : créer des solutions web efficaces, esthétiques et accessibles à tous.</p>
               <img src="/images/IMG-20240817-WA0009.jpg" alt="Photo de Charles Faye" class="filter-none max-w-full p-5 md:w-[500px] md:h-[500px] md:mx-auto md:block lg:float-left object-cover">
             <h3 class="text-blue-700 font-bold text-xl text-center lg:text-start p-5  underline decoration-wavy underline-offset-4 ">Développeur Web & Passionné de code.</h3>
             <p class="max-w-full px-5 text-justify md:mx-auto md:w-3/4 font-[Roboto]">Bonjour et bienvenue sur mon portfolio !</p>
@@ -85,15 +85,15 @@
             <p class="max-w-full px-5 py-3 text-justify md:m-auto md:w-3/4  font-[Roboto]">Ce portfolio reflète non seulement mon parcours, mais aussi mon envie constante d’apprendre, d’évoluer et de contribuer à des projets qui ont du sens. Si vous souhaitez en savoir plus ou collaborer avec moi, n’hésitez pas à me contacter !
             </p>
           </section>
-          <section id="services" class="md:w-custom md:mx-auto">
+          <section id="services" class="md:w-custom md:mx-auto intersect-element sticky z-[9999]">
               <h2 class="text-2xl md:text-3xl text-center mt-10 md:mt-16 mb-5 font-bold" aria-labelledby="services">Services</h2>
               <div class=" bg-gray-400 rounded-lg w-36 m-auto h-[1px] relative" aria-hidden="true">
-                <div class=" w-16 m-auto h-1 bg-blue-900 absolute -top-[0.1rem] left-10 rounded-lg" aria-hidden="true"></div>
+                <div class="w-16 m-auto h-1 bg-blue-900 absolute -top-[0.1rem] left-10 rounded-lg" aria-hidden="true"></div>
               </div>
-              <p class="max-w-full px-5 py-5 text-justify md:m-auto md:w-3/4  font-[Roboto]">Découvrez les services que je propose pour vous aider à créer, améliorer et faire évoluer votre présence en ligne. De la conception sur mesure à l’optimisation SEO, chaque service est pensé pour répondre à vos besoins spécifiques.</p>
+              <p class="max-w-full px-5 py-5 text-justify md:m-auto md:w-3/4 font-[Roboto]">Découvrez les services que je propose pour vous aider à créer, améliorer et faire évoluer votre présence en ligne. De la conception sur mesure à l’optimisation SEO, chaque service est pensé pour répondre à vos besoins spécifiques.</p>
               <div class="flex flex-col justify-center items-center md:flex-row md:justify-center md:flex-wrap gap-5">
                 <div id="design-container" class="relative group hover:bg-blue-700 hover:bg-opacity-50 cursor-pointer">
-                  <img src="/images/domenico-loia-hGV2TfOh0ns-unsplash.jpg" alt="image d'un setup."  class="max-w-full p-5 w-[400px] h-[400px] object-cover sticky z-[9997] group-hover:opacity-0">
+                  <img src="/images/domenico-loia-hGV2TfOh0ns-unsplash.jpg" alt="image d'un setup."  class="max-w-full p-5 w-[400px] h-[400px] object-cover sticky z-[9997] group-hover:opacity-0" loading="lazy">
                       <div class="border-s-2 border-s-blue-700 border-b-2 border-blue-700 opacity-75 absolute z-[9999]  bottom-10 left-10 w-16 h-16" aria-hidden="true"></div>
                       <div class="border-e-2 border-e-blue-700 border-t-2 border-blue-700 opacity-75 absolute z-[9999] top-10 right-10 w-16 h-16" aria-hidden="true"></div>
                       <p class="text-2xl font-[Roboto] italic absolute top-36 left-10 md:left-24 w-3/4 z-[9999] group-hover:opacity-0">Création de  sites web sur mesure</p>
@@ -102,7 +102,7 @@
                        top-14 left-6 md:left-12 w-[300px] h-auto  group-hover:animate-rotate group-hover:opacity-100 transition duration-300">Je conçois des sites web entièrement personnalisés, adaptés à vos besoins spécifiques. Chaque projet est développé en partant de zéro pour garantir une solution unique, moderne et responsive. J’accorde une attention particulière à l’expérience utilisateur et au design. Ensemble, nous bâtissons une présence en ligne fidèle à votre image. </p>
                 </div>
                 <div id="wordpress-container" class="relative group hover:bg-blue-700 hover:bg-opacity-50 cursor-pointer">
-                      <img src="/images/justin-morgan-ZjX-z2Q5zrk-unsplash.jpg" alt="tableau de bord de Wordpress." class="max-w-full p-5 w-[400px] h-[400px] object-cover sticky z-[9997] group-hover:opacity-0">
+                      <img src="/images/justin-morgan-ZjX-z2Q5zrk-unsplash.jpg" alt="tableau de bord de Wordpress." class="max-w-full p-5 w-[400px] h-[400px] object-cover sticky z-[9997] group-hover:opacity-0" loading="lazy">
                       <div class="border-s-2 border-s-blue-700 border-b-2 border-blue-700 opacity-75 absolute z-[9999]  bottom-10 left-10 w-16 h-16" aria-hidden="true"></div>
                       <div class="border-e-2 border-e-blue-700 border-t-2 border-blue-700 opacity-75 absolute z-[9999] top-10 right-10 w-16 h-16" aria-hidden="true"></div>
                       <p class="text-2xl font-[Roboto] italic absolute z-[9999] top-36 left-10 md:left-24 w-3/4 group-hover:opacity-0">Intégration et Personnalisation CMS (Wordpress)</p>
@@ -110,7 +110,7 @@
                        top-14 left-6 md:left-12 w-[300px] h-auto  group-hover:animate-rotate group-hover:opacity-100 transition duration-300">Je crée des sites professionnels avec WordPress, faciles à gérer et évolutifs. Grâce à ce CMS populaire, vous bénéficiez d’une interface intuitive et de nombreuses fonctionnalités. Je personnalise votre site selon vos objectifs et votre identité visuelle. Idéal pour les blogs, portfolios, sites vitrines ou boutiques en ligne.</p>
                 </div>
                 <div id="maintenance-container" class="relative group hover:bg-blue-700 hover:bg-opacity-50 cursor-pointer">
-                  <img src="/images/markus-spiske-VO5w2Ida70s-unsplash.jpg" alt="panneau de signalisation." class="max-w-full p-5 w-[400px] h-[400px] object-cover sticky z-[9997] group-hover:opacity-0">
+                  <img src="/images/markus-spiske-VO5w2Ida70s-unsplash.jpg" alt="panneau de signalisation." class="max-w-full p-5 w-[400px] h-[400px] object-cover sticky z-[9997] group-hover:opacity-0" loading="lazy">
                       <div class="border-s-2 border-s-blue-700 border-b-2 border-blue-700 opacity-75 absolute z-[9999]  bottom-10 left-10 w-16 h-16" aria-hidden="true"></div>
                       <div class="border-e-2 border-e-blue-700 border-t-2 border-blue-700 opacity-75 absolute z-[9999] top-10 right-10 w-16 h-16" aria-hidden="true"></div>
                       <p class="text-2xl font-[Roboto] italic absolute z-[9999] top-36 left-10 md:left-16 w-3/4 group-hover:opacity-0">Maintenance & Amélioration</p>
@@ -118,7 +118,7 @@
                        top-14 left-6 md:left-12 w-[300px] h-auto  group-hover:animate-rotate group-hover:opacity-100 transition duration-300">Je vous accompagne dans la maintenance régulière de votre site : mises à jour, corrections de bugs, sauvegardes et surveillance. J’interviens également pour ajouter de nouvelles fonctionnalités ou améliorer le design. Votre site reste ainsi performant, sécurisé et à jour. Un service indispensable pour préserver votre investissement.</p>
                 </div>
                 <div id="seo-container" class="relative group hover:bg-blue-700 hover:bg-opacity-50 cursor-pointer">
-                   <img src="/images/stephen-phillips-hostreviews-co-uk-shr_Xn8S8QU-unsplash.jpg" alt="tableau de bord relatif à l'optimisation SEO." class="max-w-full p-5 w-[400px] h-[400px] object-cover sticky z-[9997] group-hover:opacity-0">
+                   <img src="/images/stephen-phillips-hostreviews-co-uk-shr_Xn8S8QU-unsplash.jpg" alt="tableau de bord relatif à l'optimisation SEO." class="max-w-full p-5 w-[400px] h-[400px] object-cover sticky z-[9997] group-hover:opacity-0" loading="lazy">
                       <div class="border-s-2 border-s-blue-700 border-b-2 border-blue-700 opacity-75 absolute z-[9999]  bottom-10 left-10 w-16 h-16" aria-hidden="true"></div>
                       <div class="border-e-2 border-e-blue-700 border-t-2 border-blue-700 opacity-75 absolute z-[9999] top-10 right-10 w-16 h-16" aria-hidden="true"></div>
                       <p class="text-2xl font-[Roboto]  italic absolute z-[9999] top-36 left-10 md:left-24 w-3/4 group-hover:opacity-0">Optimisation SEO & Performance</p>
@@ -127,7 +127,7 @@
                 </div>
               </div>
           </section>
-          <section id="resume" class="md:w-custom md:mx-auto">
+          <section id="skills" class="md:w-custom md:mx-auto">
             <h2 class="text-2xl md:text-3xl text-center mt-10 md:mt-16 mb-5 font-bold" aria-labelledby="resume">Mes compétences</h2>
             <div class=" bg-gray-400 rounded-lg w-36 m-auto h-[1px] relative" aria-hidden="true">
               <div class=" w-16 m-auto h-1 bg-blue-900 absolute -top-[0.1rem] left-10 rounded-lg" aria-hidden="true"></div>
@@ -174,7 +174,7 @@
               </div>
             </div>
           </section>
-          <section id="projects" class="md:w-custom md:mx-auto">
+          <section id="projects" class="md:w-custom md:mx-auto intersect-element sticky z-[9999]">
             <h2 aria-labelledby="projects" class="text-2xl md:text-3xl text-center mt-10 md:mt-16 mb-5 font-bold">Projets</h2>
             <div class=" bg-gray-400 rounded-lg w-36 m-auto h-[1px] relative" aria-hidden="true">
               <div class=" w-16 m-auto h-1 bg-blue-900 absolute -top-[0.1rem] left-10 rounded-lg" aria-hidden="true"></div>
@@ -256,7 +256,7 @@
               
           </section>
           </main>
-         <footer id="contact" class="sticky z-[998]">
+         <footer id="contact" class="sticky z-[998] intersect-element opacity-0">
           <section class="md:w-custom md:mx-auto">
            <h2 class="text-2xl md:text-3xl text-center mt-10 md:mt-16 mb-5 font-bold" aria-labelledby="resume">Contact</h2>
             <div class=" bg-gray-400 rounded-lg w-36 m-auto h-[1px] relative" aria-hidden="true">
