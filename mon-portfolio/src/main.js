@@ -370,7 +370,6 @@ document.addEventListener('DOMContentLoaded', () => {
  */
   const toggleMode = () => {
     const theme = html.getAttribute('class');
-    console.log(theme)
     if (theme !== 'dark') {
         html.classList.add('dark'); 
         sunIcon.classList.remove('bi-brightness-low');
