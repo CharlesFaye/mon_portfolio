@@ -29,6 +29,7 @@
   </head>
   <body class="relative bg-white text-black dark:bg-gray-900 dark:text-gray-200">
     <header class="">
+     
       <div class="flex justify-between items-center max-w-full md:relative z-[999] md:py-5">
         <div id="dark-mode" class="md:absolute md:right-2 md:top-2 z-[999] ml-2">
           <i class="bi bi-brightness-low text-xl cursor-pointer" aria-label="Basculer entre mode clair et mode sombre"></i>
@@ -40,14 +41,19 @@
       
       <nav id="navmenu" class="hidden animate-fade-in md:flex md:fixed md:top-0 md:bottom-0 md:left-0 md:right-0 md:w-1/2 md:z-[999] sticky z-[9999]">
          <ul class="flex flex-col gap-10 md:gap-5 justify-center items-center w-3/4 h-screen bg-white p-2 md:bg-transparent md:items-start dark:bg-gray-900 md:dark:bg-transparent dark:text-white">
-            <li><a href="#hero" class="nav-link active bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full hover:bg-blue-700 hover:text-white" data-text="Accueil"><i class="bi bi-house text-black md:text-2xl"></i><span class="px-3">Accueil</span></a></li>
-            <li><a href="#about" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full  hover:bg-blue-700 hover:text-white" data-text="À Propos"><i class="bi bi-person md:text-2xl text-black"></i><span class="ml-2">À Propos</span></a></li>
-            <li><a href="#services" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full hover:bg-blue-700 hover:text-white" data-text="Services"><i class="bi bi-hdd-stack md:text-2xl text-black"></i><span class="px-3">Services</span></a></li>
-            <li><a href="#skills" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full  hover:bg-blue-700 hover:text-white" data-text="Compétences"><i class="bi bi-gear text-black md:text-2xl"></i><span class="px-3">Compétences</span></a></li>
-            <li><a href="#projects" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full hover:bg-blue-700 hover:text-white" data-text="Projets"><i class="bi bi-images text-black md:text-2xl"></i><span class="px-3">Projets</span></a></li>
-            <li><a href="#contact" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full  hover:bg-blue-700 hover:text-white" data-text="Contacts"><i class="bi bi-envelope text-black md:text-2xl"></i><span class="px-3">Contact</span></a></li>
+            <li><a href="#hero" class="nav-link active bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full hover:bg-blue-700 hover:text-white" data-text="Accueil"><i class="bi bi-house text-black md:text-2xl"></i><span class="px-3" data-i18n="navlinkHome">Accueil</span></a></li>
+            <li><a href="#about" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full  hover:bg-blue-700 hover:text-white" data-text="À Propos"><i class="bi bi-person md:text-2xl text-black"></i><span class="ml-2" data-i18n="navlinkAbout">À Propos</span></a></li>
+            <li><a href="#services" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full hover:bg-blue-700 hover:text-white" data-text="Services"><i class="bi bi-hdd-stack md:text-2xl text-black"></i><span class="px-3" data-i18n="navlinkServices">Services</span></a></li>
+            <li><a href="#skills" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full  hover:bg-blue-700 hover:text-white" data-text="Compétences"><i class="bi bi-gear text-black md:text-2xl"></i><span class="px-3" data-i18n="navlinkSkills">Compétences</span></a></li>
+            <li><a href="#projects" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full hover:bg-blue-700 hover:text-white" data-text="Projets"><i class="bi bi-images text-black md:text-2xl"></i><span class="px-3" data-i18n="navlinkProjects">Projets</span></a></li>
+            <li><a href="#contact" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full  hover:bg-blue-700 hover:text-white" data-text="Contacts"><i class="bi bi-envelope text-black md:text-2xl"></i><span class="px-3" data-i18n="navlinkContact">Contact</span></a></li>
+             <select id="languageSwitcher" class="bg-gray-300 dark:bg-gray-700 p-2 rounded">
+                <option value="fr">🇫🇷 Français</option>
+                <option value="en">🇬🇧 English</option>
+             </select>
 
        </ul>
+       
       </nav>
     </header>
     <main>
@@ -60,7 +66,7 @@
 
             <div class="hero-content opacity-0  absolute top-52 left-12 md:top-32 lg:top-52 md:left-40 lg:left-52 z-[997] md:z-[999]">
               <h2 class="text-4xl md:text-6xl text-[#45505b] font-bold dark:text-violet-500">Charles Simel Faye</h2>
-                <p class="text-2xl md:text-3xl mt-5 font-[Roboto] text-gray-900 dark:text-gray-300">Je suis <span id="typed" class="underline underline-offset-4 decoration-blue-700"></span></p>
+                <p class="text-2xl md:text-3xl mt-5 font-[Roboto] text-gray-900 dark:text-gray-300" ><span data-i18n="heroDescription">Je suis</span> <span id="typed" class="underline underline-offset-4 decoration-blue-700"></span></p>
                 <div class="mt-5 flex gap-5">
                 <a href="https://www.linkedin.com/in/charles-simel-faye-3382bb2aa/" target="_blank" ><i class="bi bi-linkedin text-base md:text-xl text-[#45505b] dark:text-gray-300"></i></a>
                 <a href="https://github.com/CharlesFaye" target="_blank" rel="noopener noreferrer"><i class="bi bi-github text-base md:text-xl text-[#45505b] dark:text-gray-300"></i></a>
@@ -72,77 +78,77 @@
             </div>
           </section>
           <section id="about" class="md:w-custom md:mx-auto intersect-element">
-            <h2 class="text-2xl md:text-3xl text-center mt-10 md:mt-16 mb-5 font-bold" aria-labelledby="about">À Propos de Moi</h2>
+            <h2 class="text-2xl md:text-3xl text-center mt-10 md:mt-16 mb-5 font-bold" aria-labelledby="about" data-i18n="aboutTitle">À Propos de Moi</h2>
             <div class=" bg-gray-400 rounded-lg w-36 m-auto h-[1px] relative" aria-hidden="true">
               <div class=" w-16 m-auto h-1 bg-blue-900 absolute -top-[0.1rem] left-10 rounded-lg" aria-hidden="true"></div>
             </div>
-            <p class="max-w-full p-5 text-justify md:m-auto md:w-3/4 md:text-center font-[Roboto">Passionné par le développement web, je conçois des sites modernes, responsives et centrés sur l'expérience utilisateur. Curieux, rigoureux et toujours prêt à relever de nouveaux défis, je continue d’apprendre chaque jour pour améliorer mes compétences. Mon objectif : créer des solutions web efficaces, esthétiques et accessibles à tous.</p>
+            <p class="max-w-full p-5 text-justify md:m-auto md:w-3/4 md:text-center font-[Roboto" data-i18n="aboutFirstParagraph">Passionné par le développement web, je conçois des sites modernes, responsives et centrés sur l'expérience utilisateur. Curieux, rigoureux et toujours prêt à relever de nouveaux défis, je continue d’apprendre chaque jour pour améliorer mes compétences. Mon objectif : créer des solutions web efficaces, esthétiques et accessibles à tous.</p>
               <img src="/images/IMG-20240817-WA0009.jpg" alt="Photo de Charles Faye" class="filter-none max-w-full p-5 md:w-[500px] md:h-[500px] md:mx-auto md:block lg:float-left object-cover">
-            <h3 class="text-blue-700 font-bold text-xl text-center lg:text-start p-5  underline decoration-wavy underline-offset-4 ">Développeur Web & Passionné de code.</h3>
-            <p class="max-w-full px-5 text-justify md:mx-auto md:w-3/4 font-[Roboto]">Bonjour et bienvenue sur mon portfolio !</p>
-            <p class="max-w-full px-5 py-2 md:mx-auto md:w-3/4  text-justify font-[Roboto]">Je m'appelle Charles Simel Faye, et mon parcours est à la croisée des chemins entre <strong>technique</strong>, <strong>rigueur</strong> et <strong>passion</strong> pour le numérique. Après avoir découvert le monde de l'informatique il y'a de cela quelques années, j'ai petit à petit commencé à développer un amour profond envers cette science qui m'était jadis autant méconnue que l'anatomie des pingouins 😆, et qui aujourd'hui est devenue une passion à laquelle je me consacre à plein temps.</p>
-            <p class="max-w-full px-5 py-3 text-justify md:m-auto md:w-3/4  font-[Roboto]">
+            <h3 class="text-blue-700 font-bold text-xl text-center lg:text-start p-5  underline decoration-wavy underline-offset-4 " data-i18n="aboutH3">Développeur Web & Passionné de code.</h3>
+            <p class="max-w-full px-5 text-justify md:mx-auto md:w-3/4 font-[Roboto]" data-i18n="aboutSecondParagraph">Bonjour et bienvenue sur mon portfolio !</p>
+            <p class="max-w-full px-5 py-2 md:mx-auto md:w-3/4  text-justify font-[Roboto]" data-i18n="aboutThirdParagraph">Je m'appelle Charles Simel Faye, et mon parcours est à la croisée des chemins entre <strong>technique</strong>, <strong>rigueur</strong> et <strong>passion</strong> pour le numérique. Après avoir découvert le monde de l'informatique il y'a de cela quelques années, j'ai petit à petit commencé à développer un amour profond envers cette science qui m'était jadis autant méconnue que l'anatomie des pingouins 😆, et qui aujourd'hui est devenue une passion à laquelle je me consacre à plein temps.</p>
+            <p class="max-w-full px-5 py-3 text-justify md:m-auto md:w-3/4  font-[Roboto]" data-i18n="aboutFourthParagraph">
               C'est ainsi que par le biais des études supérieures et étant de nature curieuse, j'ai petit à petit découvert le <strong>développement web</strong>. Ce fut une véritable révélation : le code m’a offert une nouvelle manière de créer, de structurer des idées, et surtout d’avoir un impact direct en construisant des projets utiles et concrets.
             </p>
-            <p class="max-w-full px-5 py-3 text-justify md:m-auto md:w-3/4  font-[Roboto]">J’ai depuis obtenu plusieurs <strong>certifications</strong> dans le domaine du développement web et mobile, notamment à travers <strong>freeCodeCamp</strong> et d'autres plateformes d'apprentissage en ligne. Je suis aussi détenteur  d'un <strong>certificat</strong> en développement web et mobile acquise en 2023 par le biais du <strong>3FPT</strong> en partenariat avec <strong>EN'Sup Afrique</strong>. </p>
-            <p class="max-w-full px-5 py-3 text-justify md:m-auto md:w-3/4  font-[Roboto]">Aujourd’hui, je me spécialise principalement dans le <strong>développement front-end</strong>, en utilisant des outils modernes comme <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>TailwindCSS</strong>, avec un intérêt croissant pour des frameworks comme <strong>React</strong> ou <strong>Next.js</strong>. J’aspire à créer des interfaces intuitives, performantes et esthétiques, tout en continuant à élargir mes compétences techniques.</p>
-            <p class="max-w-full px-5 py-3 text-justify md:m-auto md:w-3/4  font-[Roboto]">Ce portfolio reflète non seulement mon parcours, mais aussi mon envie constante d’apprendre, d’évoluer et de contribuer à des projets qui ont du sens. Si vous souhaitez en savoir plus ou collaborer avec moi, n’hésitez pas à me contacter !
+            <p class="max-w-full px-5 py-3 text-justify md:m-auto md:w-3/4  font-[Roboto]" data-i18n="aboutFifthParagraph">J’ai depuis obtenu plusieurs <strong>certifications</strong> dans le domaine du développement web et mobile, notamment à travers <strong>freeCodeCamp</strong> et d'autres plateformes d'apprentissage en ligne. Je suis aussi détenteur  d'un <strong>certificat</strong> en développement web et mobile acquise en 2023 par le biais du <strong>3FPT</strong> en partenariat avec <strong>EN'Sup Afrique</strong>. </p>
+            <p class="max-w-full px-5 py-3 text-justify md:m-auto md:w-3/4  font-[Roboto]" data-i18n="aboutsixthParagraph">Aujourd’hui, je me spécialise principalement dans le <strong>développement front-end</strong>, en utilisant des outils modernes comme <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>TailwindCSS</strong>, avec un intérêt croissant pour des frameworks comme <strong>React</strong> ou <strong>Next.js</strong>. J’aspire à créer des interfaces intuitives, performantes et esthétiques, tout en continuant à élargir mes compétences techniques.</p>
+            <p class="max-w-full px-5 py-3 text-justify md:m-auto md:w-3/4  font-[Roboto]" data-i18n="aboutSeventhParagraph">Ce portfolio reflète non seulement mon parcours, mais aussi mon envie constante d’apprendre, d’évoluer et de contribuer à des projets qui ont du sens. Si vous souhaitez en savoir plus ou collaborer avec moi, n’hésitez pas à me contacter !
             </p>
           </section>
           <section id="services" class="md:w-custom md:mx-auto intersect-element sticky z-[9999]">
-              <h2 class="text-2xl md:text-3xl text-center mt-10 md:mt-16 mb-5 font-bold" aria-labelledby="services">Services</h2>
+              <h2 class="text-2xl md:text-3xl text-center mt-10 md:mt-16 mb-5 font-bold" aria-labelledby="services" data-i18n="servicesTitle">Services</h2>
               <div class=" bg-gray-400 rounded-lg w-36 m-auto h-[1px] relative" aria-hidden="true">
                 <div class="w-16 m-auto h-1 bg-blue-900 absolute -top-[0.1rem] left-10 rounded-lg" aria-hidden="true"></div>
               </div>
-              <p class="max-w-full px-5 py-5 text-justify md:m-auto md:w-3/4 font-[Roboto]">Découvrez les services que je propose pour vous aider à créer, améliorer et faire évoluer votre présence en ligne. De la conception sur mesure à l’optimisation SEO, chaque service est pensé pour répondre à vos besoins spécifiques.</p>
+              <p class="max-w-full px-5 py-5 text-justify md:m-auto md:w-3/4 font-[Roboto]" data-i18n="servicesParagraph">Découvrez les services que je propose pour vous aider à créer, améliorer et faire évoluer votre présence en ligne. De la conception sur mesure à l’optimisation SEO, chaque service est pensé pour répondre à vos besoins spécifiques.</p>
               <div class="flex flex-col justify-center items-center md:flex-row md:justify-center md:flex-wrap gap-5">
                 <div id="design-container" class="relative group hover:bg-blue-700 hover:bg-opacity-50 cursor-pointer">
                     <img src="/images/domenico-loia-hGV2TfOh0ns-unsplash.jpg" alt="image d'un setup."  class="max-w-full p-5 w-[400px] h-[400px] object-cover sticky z-[9997] group-hover:opacity-0 filter opacity-30 dark:grayscale dark:saturate-50" loading="lazy">
                    
                       <div class="border-s-2 border-s-blue-700 border-b-2 border-blue-700 opacity-75 absolute z-[9999]  bottom-10 left-10 w-16 h-16" aria-hidden="true"></div>
                       <div class="border-e-2 border-e-blue-700 border-t-2 border-blue-700 opacity-75 absolute z-[9999] top-10 right-10 w-16 h-16" aria-hidden="true"></div>
-                      <p class="text-2xl font-[Roboto] italic absolute top-36 left-10 md:left-24 w-3/4 z-[9999] group-hover:opacity-0">Création de  sites web sur mesure</p>
-                      <p class="text-2xl font-[Roboto]  italic absolute bottom-10 right-10 z-[9999] group-hover:opacity-0">Front/Back/BD</p>
+                      <p class="text-2xl font-[Roboto] italic absolute top-36 left-10 md:left-16 w-3/4 z-[9999] group-hover:opacity-0" data-i18n="designContainerFirstParagraph">Création de  sites web sur mesure</p>
+                      <p class="text-2xl font-[Roboto]  italic absolute bottom-10 right-10 z-[9999] group-hover:opacity-0" data-i18n="designContainerSecondParagraph">Front/Back/BD</p>
                       <p class="opacity-0 font-[Roboto] text-center absolute
-                       top-14 left-6 md:left-12 w-[300px] h-auto  group-hover:animate-rotate group-hover:opacity-100 transition duration-300">Je conçois des sites web entièrement personnalisés, adaptés à vos besoins spécifiques. Chaque projet est développé en partant de zéro pour garantir une solution unique, moderne et responsive. J’accorde une attention particulière à l’expérience utilisateur et au design. Ensemble, nous bâtissons une présence en ligne fidèle à votre image. </p>
+                       top-14 left-6 md:left-12 w-[300px] h-auto  group-hover:animate-rotate group-hover:opacity-100 transition duration-300" data-i18n="designContainerThirdParagraph">Je conçois des sites web entièrement personnalisés, adaptés à vos besoins spécifiques. Chaque projet est développé en partant de zéro pour garantir une solution unique, moderne et responsive. J’accorde une attention particulière à l’expérience utilisateur et au design. Ensemble, nous bâtissons une présence en ligne fidèle à votre image. </p>
                 </div>
                 <div id="wordpress-container" class="relative group hover:bg-blue-700 hover:bg-opacity-50 cursor-pointer">
                       <img src="/images/justin-morgan-ZjX-z2Q5zrk-unsplash.jpg" alt="tableau de bord de Wordpress." class="max-w-full p-5 w-[400px] h-[400px] object-cover sticky z-[9997] group-hover:opacity-0 filter opacity-30 dark:grayscale dark:saturate-50" loading="lazy">
                       <div class="border-s-2 border-s-blue-700 border-b-2 border-blue-700 opacity-75 absolute z-[9999]  bottom-10 left-10 w-16 h-16" aria-hidden="true"></div>
                       <div class="border-e-2 border-e-blue-700 border-t-2 border-blue-700 opacity-75 absolute z-[9999] top-10 right-10 w-16 h-16" aria-hidden="true"></div>
-                      <p class="text-2xl font-[Roboto] italic absolute z-[9999] top-36 left-10 md:left-24 w-3/4 group-hover:opacity-0">Intégration et Personnalisation CMS (Wordpress)</p>
+                      <p class="text-2xl font-[Roboto] italic absolute z-[9999] top-36 left-10 md:left-16 w-3/4 group-hover:opacity-0" data-i18n="wordpressContainerFirstParagraph">Intégration et Personnalisation CMS (Wordpress)</p>
                       <p class="opacity-0 font-[Roboto] text-center absolute
-                       top-14 left-6 md:left-12 w-[300px] h-auto  group-hover:animate-rotate group-hover:opacity-100 transition duration-300">Je crée des sites professionnels avec WordPress, faciles à gérer et évolutifs. Grâce à ce CMS populaire, vous bénéficiez d’une interface intuitive et de nombreuses fonctionnalités. Je personnalise votre site selon vos objectifs et votre identité visuelle. Idéal pour les blogs, portfolios, sites vitrines ou boutiques en ligne.</p>
+                       top-14 left-6 md:left-12 w-[300px] h-auto  group-hover:animate-rotate group-hover:opacity-100 transition duration-300" data-i18n="wordpressContainerSecondParagraph">Je crée des sites professionnels avec WordPress, faciles à gérer et évolutifs. Grâce à ce CMS populaire, vous bénéficiez d’une interface intuitive et de nombreuses fonctionnalités. Je personnalise votre site selon vos objectifs et votre identité visuelle. Idéal pour les blogs, portfolios, sites vitrines ou boutiques en ligne.</p>
                 </div>
                 <div id="maintenance-container" class="relative group hover:bg-blue-700 hover:bg-opacity-50 cursor-pointer">
                   <img src="/images/markus-spiske-VO5w2Ida70s-unsplash.jpg" alt="panneau de signalisation." class="max-w-full p-5 w-[400px] h-[400px] object-cover sticky z-[9997] group-hover:opacity-0 filter opacity-30 dark:grayscale dark:saturate-50" loading="lazy">
                       <div class="border-s-2 border-s-blue-700 border-b-2 border-blue-700 opacity-75 absolute z-[9999]  bottom-10 left-10 w-16 h-16" aria-hidden="true"></div>
                       <div class="border-e-2 border-e-blue-700 border-t-2 border-blue-700 opacity-75 absolute z-[9999] top-10 right-10 w-16 h-16" aria-hidden="true"></div>
-                      <p class="text-2xl font-[Roboto] italic absolute z-[9999] top-36 left-10 md:left-16 w-3/4 group-hover:opacity-0">Maintenance & Amélioration</p>
+                      <p class="text-2xl font-[Roboto] italic absolute z-[9999] top-36 left-10 md:left-16 w-3/4 group-hover:opacity-0" data-i18n="maintenanceContainerFirstParagraph">Maintenance & Amélioration</p>
                       <p class="opacity-0 font-[Roboto] text-center absolute
-                       top-14 left-6 md:left-12 w-[300px] h-auto  group-hover:animate-rotate group-hover:opacity-100 transition duration-300">Je vous accompagne dans la maintenance régulière de votre site : mises à jour, corrections de bugs, sauvegardes et surveillance. J’interviens également pour ajouter de nouvelles fonctionnalités ou améliorer le design. Votre site reste ainsi performant, sécurisé et à jour. Un service indispensable pour préserver votre investissement.</p>
+                       top-14 left-6 md:left-12 w-[300px] h-auto  group-hover:animate-rotate group-hover:opacity-100 transition duration-300" data-i18n="maintenanceContainerSecondParagraph">Je vous accompagne dans la maintenance régulière de votre site : mises à jour, corrections de bugs, sauvegardes et surveillance. J’interviens également pour ajouter de nouvelles fonctionnalités ou améliorer le design. Votre site reste ainsi performant, sécurisé et à jour. Un service indispensable pour préserver votre investissement.</p>
                 </div>
                 <div id="seo-container" class="relative group hover:bg-blue-700 hover:bg-opacity-50 cursor-pointer">
                    <img src="/images/stephen-phillips-hostreviews-co-uk-shr_Xn8S8QU-unsplash.jpg" alt="tableau de bord relatif à l'optimisation SEO." class="max-w-full p-5 w-[400px] h-[400px] object-cover sticky z-[9997] group-hover:opacity-0 filter opacity-30 dark:grayscale dark:saturate-50" loading="lazy">
                       <div class="border-s-2 border-s-blue-700 border-b-2 border-blue-700 opacity-75 absolute z-[9999]  bottom-10 left-10 w-16 h-16" aria-hidden="true"></div>
                       <div class="border-e-2 border-e-blue-700 border-t-2 border-blue-700 opacity-75 absolute z-[9999] top-10 right-10 w-16 h-16" aria-hidden="true"></div>
-                      <p class="text-2xl font-[Roboto]  italic absolute z-[9999] top-36 left-10 md:left-24 w-3/4 group-hover:opacity-0">Optimisation SEO & Performance</p>
+                      <p class="text-2xl font-[Roboto]  italic absolute z-[9999] top-36 left-10 md:left-24 w-3/4 group-hover:opacity-0" data-i18n="seoContainerFirstParagraph">Optimisation SEO & Performance</p>
                       <p class="opacity-0 font-[Roboto] text-center absolute
-                       top-14 left-6 md:left-12 w-[300px] h-auto  group-hover:animate-rotate group-hover:opacity-100 transition duration-300">J’optimise votre site pour améliorer son référencement naturel (SEO) et ses performances techniques. Cela inclut l’optimisation du code, des images, de la vitesse de chargement et des balises SEO. Le but : améliorer votre visibilité sur Google et offrir une navigation fluide à vos visiteurs. Un levier clé pour booster votre présence en ligne.</p>
+                       top-14 left-6 md:left-12 w-[300px] h-auto  group-hover:animate-rotate group-hover:opacity-100 transition duration-300" data-i18n="seoContainerSecondParagraph">J’optimise votre site pour améliorer son référencement naturel (SEO) et ses performances techniques. Cela inclut l’optimisation du code, des images, de la vitesse de chargement et des balises SEO. Le but : améliorer votre visibilité sur Google et offrir une navigation fluide à vos visiteurs. Un levier clé pour booster votre présence en ligne.</p>
                 </div>
               </div>
           </section>
           <section id="skills" class="md:w-custom md:mx-auto">
-            <h2 class="text-2xl md:text-3xl text-center mt-10 md:mt-16 mb-5 font-bold" aria-labelledby="resume">Mes compétences</h2>
+            <h2 class="text-2xl md:text-3xl text-center mt-10 md:mt-16 mb-5 font-bold" aria-labelledby="resume" data-i18n="skillsTitle">Mes compétences</h2>
             <div class=" bg-gray-400 rounded-lg w-36 m-auto h-[1px] relative" aria-hidden="true">
               <div class=" w-16 m-auto h-1 bg-blue-900 absolute -top-[0.1rem] left-10 rounded-lg" aria-hidden="true"></div>
             </div>
             <div class="flex justify-center items-center my-10">
-              <q class="italic font-[Roboto]">
+              <q class="italic font-[Roboto]" data-i18n="skillsQuote">
                 Le savoir faire vaut mieux que le savoir.
               </q>
             </div>
-            <h3 class="text-center md:text-2xl">Langages && Frameworks</h3>
+            <h3 class="text-center md:text-2xl" data-i18n="skillsh3">Langages && Frameworks</h3>
             <div id="skills" class="flex flex-col justify-center items-center md:flex-row md:flex-wrap md:justify-center gap-5 md:w-full lg:w-full md:mx-auto p-10">
               <div data-skill="HTML" class="relative bg-slate-100 dark:bg-slate-800 pt-8 pb-3 px-3 rounded-lg">
                 <progress id="html-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" value="0" max="100" class="w-[75vw] p-[0.2rem] md:w-[35vw]"></progress>
@@ -163,7 +169,7 @@
                 <progress id="mobile-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" value="0" max="100" class="w-[75vw] p-[0.2rem] md:w-[35vw]"></progress>
               </div>
             </div>
-            <h3 class="text-center md:text-2xl mt-10">Outils && Technologies</h3>
+            <h3 class="text-center md:text-2xl mt-10" data-i18n="skillsSecondh3">Outils && Technologies</h3>
             <div id="skills" class="flex flex-col justify-center items-center md:flex-row md:flex-wrap md:justify-center gap-5 md:w-full lg:w-full md:mx-auto p-10">
               <div data-skill="dev-tools" class="relative bg-slate-100 dark:bg-slate-800 pt-12 pb-3 px-3 rounded-lg">
                 <progress id="dev-tools-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" value="0" max="100" class="w-[75vw] p-[0.2rem] md:w-[35vw]"></progress>
@@ -180,15 +186,15 @@
             </div>
           </section>
           <section id="projects" class="md:w-custom md:mx-auto intersect-element sticky z-[9999]">
-            <h2 aria-labelledby="projects" class="text-2xl md:text-3xl text-center mt-10 md:mt-16 mb-5 font-bold">Projets</h2>
+            <h2 aria-labelledby="projects" class="text-2xl md:text-3xl text-center mt-10 md:mt-16 mb-5 font-bold" data-i18n="projectsTitle">Projets</h2>
             <div class=" bg-gray-400 rounded-lg w-36 m-auto h-[1px] relative" aria-hidden="true">
               <div class=" w-16 m-auto h-1 bg-blue-900 absolute -top-[0.1rem] left-10 rounded-lg" aria-hidden="true"></div>
             </div>
              <div id="filter-container" class="my-10">
                 <ul class="flex gap-10 justify-center">
-                  <li  class="filter-active font-[Roboto] sticky z-[9999] cursor-pointer" data-filter="*">Tous</li>
-                  <li class="font-[Roboto] sticky z-[9999] cursor-pointer" data-filter=".filter-app">App</li>
-                  <li class="font-[Roboto] sticky z-[9999] cursor-pointer" data-filter=".filter-web">Web</li>
+                  <li  class="filter-active font-[Roboto] sticky z-[9999] cursor-pointer" data-filter="*" data-i18n="filterAll">Tous</li>
+                  <li class="font-[Roboto] sticky z-[9999] cursor-pointer" data-filter=".filter-app" data-i18n="filterApp">App</li>
+                  <li class="font-[Roboto] sticky z-[9999] cursor-pointer" data-filter=".filter-web" data-i18n="filterWeb">Web</li>
                 </ul>
               </div>
               <div class="project w-[50vw] mx-auto md:w-full md:mx-auto md:pl-36 lg:w-full lg:mx-auto ">
@@ -201,8 +207,8 @@
                     </div>
                   
                   <div class="absolute z-[999]  bottom-0 bg-white  min-h-52 px-2 py-3">
-                    <h3 class="text-gray-800 text-center font-bold text-lg md:text-xl lg:text-xl mb-2">Application Djay Suñu Mbay</h3>
-                    <p class="text-sm md:text-base lg:text-base font-[Roboto] mb-2 text-gray-800">Une plateforme mobile destinée aux producteurs agricoles pour vendre et valoriser leurs récoltes en ligne. Elle favorise la mise en relation directe entre producteurs et acheteurs.</p>
+                    <h3 class="text-gray-800 text-center font-bold text-lg md:text-xl lg:text-xl mb-2" data-i18n="projectItemAppTitle">Application Djay Suñu Mbay</h3>
+                    <p class="text-sm md:text-base lg:text-base font-[Roboto] mb-2 text-gray-800" data-i18n="projectItemAppParagraph">Une plateforme mobile destinée aux producteurs agricoles pour vendre et valoriser leurs récoltes en ligne. Elle favorise la mise en relation directe entre producteurs et acheteurs.</p>
                     <ul class="flex flex-wrap gap-4 items-end">
                       <li class=" text-blue-900 bg-blue-700 bg-opacity-30 text-sm px-4 py-1 rounded-full">Java</li>
                       <li class="text-blue-900 text-sm bg-blue-700 bg-opacity-30 px-4 py-1 rounded-full">XML</li>
@@ -217,8 +223,8 @@
                        <a href="https://github.com/CharlesFaye/biblio" target="_blank" rel="noopener noreferrer"><i class="bi bi-github  bg-white dark:bg-gray-900 rounded-full px-3 py-2"></i></a>
                     </div>
                     <div class="absolute z-[999]  bottom-0 bg-white  min-h-52 px-2 py-3">
-                    <h3 class="text-gray-800 text-center font-bold text-lg md:text-xl lg:text-xl mb-2">Bibliothèque virtuelle</h3>
-                    <p class="text-sm md:text-base lg:text-base font-[Roboto] mb-2 text-gray-800">Un outil numérique pour consulter, organiser et suivre des livres en ligne. Idéal pour encourager la lecture et gérer sa collection personnelle.</p>
+                    <h3 class="text-gray-800 text-center font-bold text-lg md:text-xl lg:text-xl mb-2" data-i18n="projectitemWeb1Title">Bibliothèque virtuelle</h3>
+                    <p class="text-sm md:text-base lg:text-base font-[Roboto] mb-2 text-gray-800" data-i18n="projectItemWeb1Paragraph">Un outil numérique pour consulter, organiser et suivre des livres en ligne. Idéal pour encourager la lecture et gérer sa collection personnelle.</p>
                     <ul class="flex gap-4 flex-wrap mt-5">
                       <li class=" text-blue-900 bg-blue-700 bg-opacity-30 text-sm px-4 py-1 rounded-full">HTML</li>
                       <li class="text-blue-900 text-sm bg-blue-700 bg-opacity-30 px-4 py-1 rounded-full">CSS</li>
@@ -234,8 +240,8 @@
                        <a href="https://github.com/CharlesFaye/DSM_WP_Site" target="_blank" rel="noopener noreferrer"><i class="bi bi-github  bg-white dark:bg-gray-900 rounded-full px-3 py-2"></i></a>
                     </div>
                    <div class="absolute z-[999]  bottom-0 bg-white  min-h-52  px-2 py-3">
-                    <h3 class="text-gray-800 text-center font-bold text-lg md:text-xl lg:text-xl mb-2">Site web Djay Suñu Mbay</h3>
-                    <p class="text-sm md:text-base lg:text-base font-[Roboto] mb-2 text-gray-800">Un site conçu pour centraliser l’offre agricole locale et faciliter l’accès au marché. Il soutient les producteurs en leur offrant une vitrine numérique accessible.</p>
+                    <h3 class="text-gray-800 text-center font-bold text-lg md:text-xl lg:text-xl mb-2" data-i18n="projectitemWeb2Title">Site web Djay Suñu Mbay</h3>
+                    <p class="text-sm md:text-base lg:text-base font-[Roboto] mb-2 text-gray-800" data-i18n="projectItemWeb2Paragraph">Un site conçu pour centraliser l’offre agricole locale et faciliter l’accès au marché. Il soutient les producteurs en leur offrant une vitrine numérique accessible.</p>
                     <ul class="flex flex-wrap gap-4 mt-5">
                       <li class=" text-blue-900 bg-blue-700 bg-opacity-30 text-sm px-4 py-1 rounded-full">Wordpress</li>
                       <li class="text-blue-900 text-sm bg-blue-700 bg-opacity-30 px-4 py-1 rounded-full">Elementor</li>
@@ -249,8 +255,8 @@
                        <a href="https://github.com/CharlesFaye/BTP_WP" target="_blank" rel="noopener noreferrer"><i class="bi bi-github  bg-white dark:bg-gray-900 rounded-full px-3 py-2"></i></a>
                     </div>
                     <div class="absolute z-[999]  bottom-0 bg-white min-h-52 px-2 py-3">
-                    <h3 class="text-gray-800 text-center font-bold text-lg md:text-xl lg:text-xl mb-2">Construction Hub</h3>
-                    <p class="text-sm md:text-base lg:text-base font-[Roboto] mb-2 text-gray-800">Un site professionnel conçu pour présenter les services, réalisations et expertises de Construction Hub, une entreprise de construction.</p>
+                    <h3 class="text-gray-800 text-center font-bold text-lg md:text-xl lg:text-xl mb-2" data-i18n="projectitemWeb3Title">Construction Hub</h3>
+                    <p class="text-sm md:text-base lg:text-base font-[Roboto] mb-2 text-gray-800" data-i18n="projectItemWeb3Paragraph">Un site professionnel conçu pour présenter les services, réalisations et expertises de Construction Hub, une entreprise de construction.</p>
                     <ul class="flex flex-wrap gap-4 mt-5">
                       <li class=" text-blue-900 bg-blue-700 bg-opacity-30 text-sm px-4 py-1 rounded-full">Wordpress</li>
                       <li class="text-blue-900 text-sm bg-blue-700 bg-opacity-30 px-4 py-1 rounded-full">Elementor</li>
@@ -263,42 +269,42 @@
           </main>
          <footer id="contact" class="sticky z-[998] intersect-element opacity-0">
           <section class="md:w-custom md:mx-auto">
-           <h2 class="text-2xl md:text-3xl text-center mt-10 md:mt-16 mb-5 font-bold" aria-labelledby="resume">Contact</h2>
+           <h2 class="text-2xl md:text-3xl text-center mt-10 md:mt-16 mb-5 font-bold" aria-labelledby="resume" data-i18n="contactTitle">Contact</h2>
             <div class=" bg-gray-400 rounded-lg w-36 m-auto h-[1px] relative" aria-hidden="true">
               <div class=" w-16 m-auto h-1 bg-blue-900 absolute -top-[0.1rem] left-10 rounded-lg" aria-hidden="true"></div>
              </div>
-              <p class="text-center font-[Roboto] p-3 mt-5">Vous avez besoin d'un site ou vous recherchez un collaborateur ? N'hésitez pas à entrer en contact avec moi via mes différents canaux ou veuillez tout simplement remplir le formulaire ci-dessous ou m'envoyez un email. Cordialement !</p>
+              <p class="text-center font-[Roboto] p-3 mt-5" data-i18n="contactParagraph">Vous avez besoin d'un site ou vous recherchez un collaborateur ? N'hésitez pas à entrer en contact avec moi via mes différents canaux ou veuillez tout simplement remplir le formulaire ci-dessous ou m'envoyez un email. Cordialement !</p>
               <div class="flex flex-col flex-wrap justify-center items-center gap-10  md:flex-row md:justify-between md:items-center mt-10">
                 <address class="flex flex-col gap-10">
                   <div class="flex items-center gap-3">
                     <i class="bi bi-envelope bg-blue-700 bg-opacity-30 text-blue-950 dark:text-gray-200 px-3 py-2 rounded-md"></i>
-                    <p class="font-[Roboto] font-bold">Email<br><span class="font-[Roboto] text-gray-800 dark:text-gray-200 font-normal">charlesfaye99@gmail.com</span></p>
+                    <p class="font-[Roboto] font-bold"><span data-i18n="addressContactParagraph1">Email</span><br><span class="font-[Roboto] text-gray-800 dark:text-gray-200 font-normal" data-i18n="addressContactSpan1">charlesfaye99@gmail.com</span></p>
                   </div>
                   <div class="flex items-center gap-3">
                     <i class="bi bi-telephone bg-blue-700 bg-opacity-30 text-blue-950 dark:text-gray-200 px-3 py-2 rounded-md"></i>
-                    <p class="font-[Roboto] font-bold">Téléphone<br><span class="font-[Roboto] text-gray-800 dark:text-gray-200 font-normal">+212 0604887615</span></p>
+                    <p class="font-[Roboto] font-bold"><span data-i18n="addressContactParagraph2">Téléphone</span><br><span class="font-[Roboto] text-gray-800 dark:text-gray-200 font-normal" data-i18n="addressContactSpan2">+212 0604887615</span></p>
                   </div>
                   <div class="flex items-center gap-3">
                     <i class="bi bi-geo-alt bg-blue-700 bg-opacity-30 text-blue-950 dark:text-gray-200 px-3 py-2 rounded-md"></i>
-                    <p class="font-[Roboto] font-bold">Localisation<br><span class="font-[Roboto] text-gray-800 dark:text-gray-200 font-normal">Sidi Maarouf, Casablanca</span></p>
+                    <p class="font-[Roboto] font-bold"><span data-i18n="addressContactParagraph3">Localisation</span><br><span class="font-[Roboto] text-gray-800 dark:text-gray-200 font-normal" data-i18n="addressContactSpan3">Sidi Maarouf, Casablanca</span></p>
                   </div>
                   
                 </address>
                 <div class="w-3/4 p-3 md:w-1/2 relative">
                   <form id="contact-form" class="flex flex-col gap-5">
                     <div class="flex flex-col gap-2">
-                      <label for="name">Nom</label>
+                      <label for="name" data-i18n="formLabelName">Nom</label>
                       <input type="text" name="user_name" id="name" class="border border-gray-400 outline-none focus:outline-1 focus:outline-blue-700 focus:border-none p-2 dark:text-black" required>
                     </div>
                     <div class="flex flex-col gap-2">
-                      <label for="email">Email</label>
+                      <label for="email" data-i18n="formLabelEmail">Email</label>
                       <input type="email" name="user_email" id="email" class="border border-gray-400 outline-none focus:outline-1 focus:outline-blue-700 focus:border-none p-2 dark:text-black" required>
                     </div>
                     <div class="flex flex-col gap-2">
-                      <label for="message">Message</label>
+                      <label for="message" data-i18n="formLabelMessage">Message</label>
                       <textarea name="message" id="message" cols="30" rows="5" class="border border-gray-400 outline-none focus:outline-1 focus:outline-blue-700 focus:border-none dark:text-black" required></textarea>
                     </div>
-                    <button type="submit" class="text-white bg-blue-700 px-3 py-2 w-full cursor-pointer">Envoyer un message</button>
+                    <button type="submit" class="text-white bg-blue-700 px-3 py-2 w-full cursor-pointer" data-i18n="formButtonText">Envoyer un message</button>
                   </form>
                   <div id="result" class="absolute -top-10 left-10 bg-green-700 bg-opacity-60 transition duration-300 p-3 hidden">
                     <p class="text-gray-900 dark:text-gray-200"></p>
@@ -308,7 +314,7 @@
           </section>
           <section class="bg-blue-700  bg-opacity-30 mt-32 p-5 flex flex-col flex-wrap justify-center items-center gap-5 md:flex-row md:justify-between">
             <h2 class="text-wl md:text-2xl order-1 md:order-1">Charles Simel Faye</h2>
-            <p class="font-[Roboto] order-3 md:order-2">&copy; <span class="date mr-1"></span>Portfolio de Charles S. Faye</p>
+            <p class="font-[Roboto] order-3 md:order-2" data-i18n="ContactLastSectionText">&copy; <span class="date mr-1"></span>Portfolio de Charles S. Faye</p>
             <div class="flex flex-row gap-2 order-2 md:order-3">
               <a href="https://www.linkedin.com/in/charles-simel-faye-3382bb2aa/" target="_blank" ><i class="bi bi-linkedin text-base md:text-xl text-[#45505b] dark:text-gray-300"></i></a>
                 <a href="https://github.com/CharlesFaye" target="_blank" rel="noopener noreferrer"><i class="bi bi-github text-base md:text-xl text-[#45505b] dark:text-gray-300"></i></a>
@@ -333,6 +339,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> 
     <script src="/src/email.js"></script>
+    <script src="/src/translate.js"></script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

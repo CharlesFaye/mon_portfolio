@@ -210,6 +210,7 @@ filterButtons.forEach(function(button) {
 /**
  * Init typed.js library
  */
+/*
  document.addEventListener('DOMContentLoaded', function () {
     new Typed("#typed", {
       strings: ["Développeur Web.", "Freelance.", "Passionné de code."],
@@ -218,7 +219,7 @@ filterButtons.forEach(function(button) {
       backDelay: 2000,
       loop: true
     });
-  });
+  }); */
 
   const dateElement = document.querySelector('.date');
   const currentDate = new Date();
