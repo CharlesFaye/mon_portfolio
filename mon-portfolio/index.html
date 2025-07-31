@@ -2,30 +2,48 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- Favicons-->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" type="image/png">
+    <link rel="android-chrome" href="android-chrome.png" type="image/png">
+     
+    <!-- Meta Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Bienvenue sur mon portfolio professionnel où je présente mes compétences, mes services, ainsi que mes différents projets.">
+
+    <!-- Open Gragh Tags -->
     <meta property="og:title" content="Découvrez mon portfolio !">
     <meta property="og:description" content="Une présentation claire de mes projets, services et compétences.">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="627">
+
+    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Découvrez mon portfolio !">
     <meta name="twitter:description" content="Une présentation claire de mes projets, services et compétences.">
     <meta name="twitter:url" content="">
     <meta name="twitter:image" content="">
     <meta name="twitter:creator" content="@Bebouzo">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Boostrap Icons file -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <!-- Glightbox file  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Main CSS file -->
     <link rel="stylesheet" href="src/style.css">
-    <title> 🔷 Portfolio de Charles Simel Faye 🔷</title>
+
+    <title>Charles Simel Faye - Mon Portfolio</title>
   </head>
   <body class="relative bg-white text-black dark:bg-gray-900 dark:text-gray-200">
     <header class="">
@@ -56,7 +74,9 @@
        
       </nav>
     </header>
+    <!-- Main -->
     <main>
+      <!-- Hero section -->
          <section id="hero" class="-mt-11">
           <div class="relative">
             <img src="/images/hero-image.jpg" alt="Une hero image d'un ordinateur" class="object-cover h-screen w-screen filter opacity-30">
@@ -76,7 +96,8 @@
                 </svg></a>
               </div>
             </div>
-          </section>
+          </section><!-- End Hero section -->
+          <!-- About section -->
           <section id="about" class="md:w-custom md:mx-auto intersect-element">
             <h2 class="text-2xl md:text-3xl text-center mt-10 md:mt-16 mb-5 font-bold" aria-labelledby="about" data-i18n="aboutTitle">À Propos de Moi</h2>
             <div class=" bg-gray-400 rounded-lg w-36 m-auto h-[1px] relative" aria-hidden="true">
@@ -94,7 +115,8 @@
             <p class="max-w-full px-5 py-3 text-justify md:m-auto md:w-3/4  font-[Roboto]" data-i18n="aboutsixthParagraph">Aujourd’hui, je me spécialise principalement dans le <strong>développement front-end</strong>, en utilisant des outils modernes comme <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>TailwindCSS</strong>, avec un intérêt croissant pour des frameworks comme <strong>React</strong> ou <strong>Next.js</strong>. J’aspire à créer des interfaces intuitives, performantes et esthétiques, tout en continuant à élargir mes compétences techniques.</p>
             <p class="max-w-full px-5 py-3 text-justify md:m-auto md:w-3/4  font-[Roboto]" data-i18n="aboutSeventhParagraph">Ce portfolio reflète non seulement mon parcours, mais aussi mon envie constante d’apprendre, d’évoluer et de contribuer à des projets qui ont du sens. Si vous souhaitez en savoir plus ou collaborer avec moi, n’hésitez pas à me contacter !
             </p>
-          </section>
+          </section><!-- End About section -->
+          <!-- Services section -->
           <section id="services" class="md:w-custom md:mx-auto intersect-element sticky z-[9999]">
               <h2 class="text-2xl md:text-3xl text-center mt-10 md:mt-16 mb-5 font-bold" aria-labelledby="services" data-i18n="servicesTitle">Services</h2>
               <div class=" bg-gray-400 rounded-lg w-36 m-auto h-[1px] relative" aria-hidden="true">
@@ -111,7 +133,7 @@
                       <p class="text-2xl font-[Roboto]  italic absolute bottom-10 right-10 z-[9999] group-hover:opacity-0" data-i18n="designContainerSecondParagraph">Front/Back/BD</p>
                       <p class="opacity-0 font-[Roboto] text-center absolute
                        top-14 left-6 md:left-12 w-[300px] h-auto  group-hover:animate-rotate group-hover:opacity-100 transition duration-300" data-i18n="designContainerThirdParagraph">Je conçois des sites web entièrement personnalisés, adaptés à vos besoins spécifiques. Chaque projet est développé en partant de zéro pour garantir une solution unique, moderne et responsive. J’accorde une attention particulière à l’expérience utilisateur et au design. Ensemble, nous bâtissons une présence en ligne fidèle à votre image. </p>
-                </div>
+                </div><!-- End Services Item -->
                 <div id="wordpress-container" class="relative group hover:bg-blue-700 hover:bg-opacity-50 cursor-pointer">
                       <img src="/images/justin-morgan-ZjX-z2Q5zrk-unsplash.jpg" alt="tableau de bord de Wordpress." class="max-w-full p-5 w-[400px] h-[400px] object-cover sticky z-[9997] group-hover:opacity-0 filter opacity-30 dark:grayscale dark:saturate-50" loading="lazy">
                       <div class="border-s-2 border-s-blue-700 border-b-2 border-blue-700 opacity-75 absolute z-[9999]  bottom-10 left-10 w-16 h-16" aria-hidden="true"></div>
@@ -119,7 +141,7 @@
                       <p class="text-2xl font-[Roboto] italic absolute z-[9999] top-36 left-10 md:left-16 w-3/4 group-hover:opacity-0" data-i18n="wordpressContainerFirstParagraph">Intégration et Personnalisation CMS (Wordpress)</p>
                       <p class="opacity-0 font-[Roboto] text-center absolute
                        top-14 left-6 md:left-12 w-[300px] h-auto  group-hover:animate-rotate group-hover:opacity-100 transition duration-300" data-i18n="wordpressContainerSecondParagraph">Je crée des sites professionnels avec WordPress, faciles à gérer et évolutifs. Grâce à ce CMS populaire, vous bénéficiez d’une interface intuitive et de nombreuses fonctionnalités. Je personnalise votre site selon vos objectifs et votre identité visuelle. Idéal pour les blogs, portfolios, sites vitrines ou boutiques en ligne.</p>
-                </div>
+                </div><!-- End Services Item -->
                 <div id="maintenance-container" class="relative group hover:bg-blue-700 hover:bg-opacity-50 cursor-pointer">
                   <img src="/images/markus-spiske-VO5w2Ida70s-unsplash.jpg" alt="panneau de signalisation." class="max-w-full p-5 w-[400px] h-[400px] object-cover sticky z-[9997] group-hover:opacity-0 filter opacity-30 dark:grayscale dark:saturate-50" loading="lazy">
                       <div class="border-s-2 border-s-blue-700 border-b-2 border-blue-700 opacity-75 absolute z-[9999]  bottom-10 left-10 w-16 h-16" aria-hidden="true"></div>
@@ -127,7 +149,7 @@
                       <p class="text-2xl font-[Roboto] italic absolute z-[9999] top-36 left-10 md:left-16 w-3/4 group-hover:opacity-0" data-i18n="maintenanceContainerFirstParagraph">Maintenance & Amélioration</p>
                       <p class="opacity-0 font-[Roboto] text-center absolute
                        top-14 left-6 md:left-12 w-[300px] h-auto  group-hover:animate-rotate group-hover:opacity-100 transition duration-300" data-i18n="maintenanceContainerSecondParagraph">Je vous accompagne dans la maintenance régulière de votre site : mises à jour, corrections de bugs, sauvegardes et surveillance. J’interviens également pour ajouter de nouvelles fonctionnalités ou améliorer le design. Votre site reste ainsi performant, sécurisé et à jour. Un service indispensable pour préserver votre investissement.</p>
-                </div>
+                </div><!-- End Services Item -->
                 <div id="seo-container" class="relative group hover:bg-blue-700 hover:bg-opacity-50 cursor-pointer">
                    <img src="/images/stephen-phillips-hostreviews-co-uk-shr_Xn8S8QU-unsplash.jpg" alt="tableau de bord relatif à l'optimisation SEO." class="max-w-full p-5 w-[400px] h-[400px] object-cover sticky z-[9997] group-hover:opacity-0 filter opacity-30 dark:grayscale dark:saturate-50" loading="lazy">
                       <div class="border-s-2 border-s-blue-700 border-b-2 border-blue-700 opacity-75 absolute z-[9999]  bottom-10 left-10 w-16 h-16" aria-hidden="true"></div>
@@ -135,9 +157,10 @@
                       <p class="text-2xl font-[Roboto]  italic absolute z-[9999] top-36 left-10 md:left-24 w-3/4 group-hover:opacity-0" data-i18n="seoContainerFirstParagraph">Optimisation SEO & Performance</p>
                       <p class="opacity-0 font-[Roboto] text-center absolute
                        top-14 left-6 md:left-12 w-[300px] h-auto  group-hover:animate-rotate group-hover:opacity-100 transition duration-300" data-i18n="seoContainerSecondParagraph">J’optimise votre site pour améliorer son référencement naturel (SEO) et ses performances techniques. Cela inclut l’optimisation du code, des images, de la vitesse de chargement et des balises SEO. Le but : améliorer votre visibilité sur Google et offrir une navigation fluide à vos visiteurs. Un levier clé pour booster votre présence en ligne.</p>
-                </div>
+                </div><!-- End Services Item -->
               </div>
-          </section>
+          </section><!-- End Services section -->
+          <!-- Skills section -->
           <section id="skills" class="md:w-custom md:mx-auto">
             <h2 class="text-2xl md:text-3xl text-center mt-10 md:mt-16 mb-5 font-bold" aria-labelledby="resume" data-i18n="skillsTitle">Mes compétences</h2>
             <div class=" bg-gray-400 rounded-lg w-36 m-auto h-[1px] relative" aria-hidden="true">
@@ -152,39 +175,40 @@
             <div id="skills" class="flex flex-col justify-center items-center md:flex-row md:flex-wrap md:justify-center gap-5 md:w-full lg:w-full md:mx-auto p-10">
               <div data-skill="HTML" class="relative bg-slate-100 dark:bg-slate-800 pt-8 pb-3 px-3 rounded-lg">
                 <progress id="html-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" value="0" max="100" class="w-[75vw] p-[0.2rem] md:w-[35vw]"></progress>
-              </div>
+              </div><!-- End Skills Item -->
               <div data-skill="CSS" class="relative bg-slate-100 dark:bg-slate-800 pt-8 pb-3 px-3 rounded-lg">
                 <progress id="css-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" value="0" max="100" class="w-[75vw] p-[0.2rem] md:w-[35vw]"></progress>
-              </div>
+              </div><!-- End Skills Item -->
               <div data-skill="JavaScript" class="relative bg-slate-100 dark:bg-slate-800 pt-8 pb-3 px-3 rounded-lg">
                 <progress id="js-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" value="0" max="100" class="w-[75vw] p-[0.2rem] md:w-[35vw]"></progress>
-              </div>
+              </div><!-- End Skills Item -->
               <div data-skill="TailwindCSS"  class="relative bg-slate-100 dark:bg-slate-800 pt-8 pb-3 px-3 rounded-lg">
                 <progress id="tailwind-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" value="0" max="100" class="w-[75vw] p-[0.2rem] md:w-[35vw]"></progress>
-              </div>
+              </div><!-- End Skills Item -->
               <div data-skill="Wordpress" class="relative bg-slate-100 dark:bg-slate-800 pt-8 pb-3 px-3 rounded-lg">
                 <progress id="wordpress-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" value="0" max="100" class="w-[75vw] p-[0.2rem] md:w-[35vw]"></progress>
-              </div>
+              </div><!-- End Skills Item -->
               <div data-skill="mobile" class="relative bg-slate-100 dark:bg-slate-800 pt-8 pb-3 px-3 rounded-lg">
                 <progress id="mobile-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" value="0" max="100" class="w-[75vw] p-[0.2rem] md:w-[35vw]"></progress>
-              </div>
+              </div><!-- End Skills Item -->
             </div>
             <h3 class="text-center md:text-2xl mt-10" data-i18n="skillsSecondh3">Outils && Technologies</h3>
             <div id="skills" class="flex flex-col justify-center items-center md:flex-row md:flex-wrap md:justify-center gap-5 md:w-full lg:w-full md:mx-auto p-10">
               <div data-skill="dev-tools" class="relative bg-slate-100 dark:bg-slate-800 pt-12 pb-3 px-3 rounded-lg">
                 <progress id="dev-tools-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" value="0" max="100" class="w-[75vw] p-[0.2rem] md:w-[35vw]"></progress>
-              </div>
+              </div><!-- End Skills Item -->
               <div data-skill="version-control" class="relative bg-slate-100 dark:bg-slate-800 pt-12 pb-3 px-3 rounded-lg">
                 <progress id="version-control-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" value="0" max="100" class="w-[75vw] p-[0.2rem] md:w-[35vw]"></progress>
-              </div>
+              </div><!-- End Skills Item -->
               <div data-skill="deployment-hosting" class="relative bg-slate-100 dark:bg-slate-800 pt-12 pb-3 px-3 rounded-lg">
                 <progress id="deployment-hosting-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" value="0" max="100" class="w-[75vw] p-[0.2rem] md:w-[35vw]"></progress>
-              </div>
+              </div><!-- End Skills Item -->
               <div data-skill="seo-performance"  class="relative bg-slate-100 dark:bg-slate-800 pt-12 pb-3 px-3 rounded-lg">
                 <progress id="seo-performance-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" value="0" max="100" class="w-[75vw] p-[0.2rem] md:w-[35vw]"></progress>
-              </div>
+              </div><!-- End Skills Item -->
             </div>
-          </section>
+          </section><!-- End Skills section -->
+          <!-- Projects Section -->
           <section id="projects" class="md:w-custom md:mx-auto intersect-element sticky z-[9999]">
             <h2 aria-labelledby="projects" class="text-2xl md:text-3xl text-center mt-10 md:mt-16 mb-5 font-bold" data-i18n="projectsTitle">Projets</h2>
             <div class=" bg-gray-400 rounded-lg w-36 m-auto h-[1px] relative" aria-hidden="true">
@@ -214,7 +238,7 @@
                       <li class="text-blue-900 text-sm bg-blue-700 bg-opacity-30 px-4 py-1 rounded-full">XML</li>
                     </ul>
                   </div>
-                </div>
+                </div><!-- End Projects Item -->
                 <div class="relative group project-item mb-10  filter-web">
                  <img src="/images/biblio.png" alt="une image du site web bibliothèque virtuelle." class="w-[400px] h-[400px] object-cover rounded-lg shadow-xl sticky z-[998]">
                     <div class="absolute z-[9999] bg-black bg-opacity-60 inset-0 flex items-center justify-center gap-4 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300">
@@ -231,7 +255,7 @@
                       <li class="text-blue-900 text-sm bg-blue-700 bg-opacity-30 px-4 py-1 rounded-full">JavaScript</li>
                     </ul>
                   </div>
-                </div>
+                </div><!-- End Projects Item -->
                 <div class="relative group project-item mb-10 filter-web">
                   <img src="/images/dsmwebsite.png" alt="une image du site Djay Suñu Mbay." class="w-[400px] h-[400px] object-cover rounded-lg shadow-xl  sticky z-[998]">
                     <div class="absolute z-[9999] bg-black bg-opacity-60 inset-0 flex items-center justify-center gap-4 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300">
@@ -247,7 +271,7 @@
                       <li class="text-blue-900 text-sm bg-blue-700 bg-opacity-30 px-4 py-1 rounded-full">Elementor</li>
                     </ul>
                   </div>
-                </div>
+                </div><!-- End Projects Item -->
                 <div class="relative group project-item mb-10  filter-web">
                    <img src="/images/btp.png" alt="une image du site web construction hub." class="w-[400px] h-[400px] object-cover rounded-lg shadow-xl sticky z-[998]">
                     <div class="absolute z-[9999] bg-black bg-opacity-60 inset-0 flex items-center justify-center gap-4 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition duration-300">
@@ -262,12 +286,14 @@
                       <li class="text-blue-900 text-sm bg-blue-700 bg-opacity-30 px-4 py-1 rounded-full">Elementor</li>
                     </ul>
                   </div>
-                </div>
+                </div><!-- End Projects Item -->
               </div>
               
-          </section>
-          </main>
+          </section><!-- End Projects Section -->
+          </main><!-- End Main -->
+          <!-- Footer -->
          <footer id="contact" class="sticky z-[998] intersect-element opacity-0">
+          <!-- Contact Section -->
           <section class="md:w-custom md:mx-auto">
            <h2 class="text-2xl md:text-3xl text-center mt-10 md:mt-16 mb-5 font-bold" aria-labelledby="resume" data-i18n="contactTitle">Contact</h2>
             <div class=" bg-gray-400 rounded-lg w-36 m-auto h-[1px] relative" aria-hidden="true">
@@ -275,6 +301,7 @@
              </div>
               <p class="text-center font-[Roboto] p-3 mt-5" data-i18n="contactParagraph">Vous avez besoin d'un site ou vous recherchez un collaborateur ? N'hésitez pas à entrer en contact avec moi via mes différents canaux ou veuillez tout simplement remplir le formulaire ci-dessous ou m'envoyez un email. Cordialement !</p>
               <div class="flex flex-col flex-wrap justify-center items-center gap-10  md:flex-row md:justify-between md:items-center mt-10">
+                <!-- Contact Info -->
                 <address class="flex flex-col gap-10">
                   <div class="flex items-center gap-3">
                     <i class="bi bi-envelope bg-blue-700 bg-opacity-30 text-blue-950 dark:text-gray-200 px-3 py-2 rounded-md"></i>
@@ -289,7 +316,8 @@
                     <p class="font-[Roboto] font-bold"><span data-i18n="addressContactParagraph3">Localisation</span><br><span class="font-[Roboto] text-gray-800 dark:text-gray-200 font-normal" data-i18n="addressContactSpan3">Sidi Maarouf, Casablanca</span></p>
                   </div>
                   
-                </address>
+                </address><!-- End Contact Info -->
+                <!-- Contact Form -->
                 <div class="w-3/4 p-3 md:w-1/2 relative">
                   <form id="contact-form" class="flex flex-col gap-5">
                     <div class="flex flex-col gap-2">
@@ -310,8 +338,9 @@
                     <p class="text-gray-900 dark:text-gray-200"></p>
                   </div>
                 </div>
-              </div>
-          </section>
+              </div><!-- End Contact Form -->
+          </section><!-- End Contact Section -->
+          <!-- Footer Last Section -->
           <section class="bg-blue-700  bg-opacity-30 mt-32 p-5 flex flex-col flex-wrap justify-center items-center gap-5 md:flex-row md:justify-between">
             <h2 class="text-wl md:text-2xl order-1 md:order-1">Charles Simel Faye</h2>
             <p class="font-[Roboto] order-3 md:order-2" data-i18n="ContactLastSectionText">&copy; <span class="date mr-1"></span>Portfolio de Charles S. Faye</p>
@@ -323,23 +352,26 @@
                 <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
                 </svg></a>
             </div>
-          </section>
-         </footer>
+          </section><!-- End Footer Last Section -->
+         </footer><!-- End Footer -->
 
-         <!-- Scroll Top -->
+  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top"><i class="bi bi-arrow-up-short active text-2xl px-3 py-2 rounded-full fixed bottom-20 right-5 cursor-pointer z-[999]"></i></a>
 
    <!-- Preloader -->
    <div id="preloader" class="fixed inset-0 z-[9999] overflow-hidden bg-white transition-all duration-300 ease-out before:rounded-full before:border-8 before:border-l-blue-700 before:border-r-blue-700 p-8 before:w-24 before:h-24 before:animate-spin  before:content-[''] before:fixed before:top-[45vh] before:left-[45vw]"></div>
 
-      
+    <!-- js libraries files -->
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- email.js file --> 
     <script src="/src/email.js"></script>
+    <!-- translate.js file -->
     <script src="/src/translate.js"></script>
+    <!-- main JS file -->
     <script src="/src/main.js"></script>
   </body>
 </html>
