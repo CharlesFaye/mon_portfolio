@@ -3,16 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const defautltLang = localStorage.getItem('lang') || 'fr';
     loadLanguage(defautltLang);
     switcher.value = defautltLang;
-
     switcher.addEventListener('change', (e) => {
         const selectedLang = e.target.value;
          loadLanguage(selectedLang)
         localStorage.setItem('lang', selectedLang);
     });
-
-
 let typedInstance = null;
-
 /**
  * Loads the specified language JSON file and updates the page content accordingly.
  * 
@@ -33,16 +29,9 @@ function loadLanguage(lang) {
         const key = el.getAttribute('data-i18n');
         if (data[key]) el.textContent = data[key];
       });
-
-      const heroElement = document.getElementById('typed');
-
       if (typedInstance) {
         typedInstance.destroy();
-        typedInstance = null;
       }
-
-      if (heroElement) {
-        heroElement.innerHTML = '';
         if (Array.isArray(data['typedHero'])) {
           typedInstance = new Typed('#typed', {
             strings: data['typedHero'],
@@ -52,9 +41,7 @@ function loadLanguage(lang) {
             loop: true,
           });
         }
-      }
     })
     .catch(err => console.error("Erreur chargement langue :", err));
 }
-
 });
