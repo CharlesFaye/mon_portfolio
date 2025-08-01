@@ -66,12 +66,13 @@
             <li><a href="#skills" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full  hover:bg-blue-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500" aria-label="Consulter mes compétences techniques" data-text="Compétences"><i class="bi bi-gear text-black md:text-2xl"></i><span class="px-3" data-i18n="navlinkSkills">Compétences</span></a></li>
             <li><a href="#projects" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full hover:bg-blue-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500" aria-label="Découvrir mes projets réalisés" data-text="Projets"><i class="bi bi-images text-black md:text-2xl"></i><span class="px-3" data-i18n="navlinkProjects">Projets</span></a></li>
             <li><a href="#contact" class="nav-link bg-gray-100 text-black py-3 pl-4 pr-8 md:px-4 md:py-3 rounded-full  hover:bg-blue-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500" aria-label="Accéder à la partie Contact" data-text="Contacts"><i class="bi bi-envelope text-black md:text-2xl"></i><span class="px-3" data-i18n="navlinkContact">Contact</span></a></li>
-            <label for="languageSwitcher" aria-label="Choisir une langue"></label>
-             <select id="languageSwitcher" class="bg-gray-300 dark:bg-gray-700 p-2 rounded">
+            <li>
+              <label for="languageSwitcher" aria-label="Choisir une langue"></label>
+              <select id="languageSwitcher" class="bg-gray-300 dark:bg-gray-700 p-2 rounded">
                 <option value="fr">🇫🇷 Français</option>
                 <option value="en">🇬🇧 English</option>
-             </select>
-
+              </select>
+            </li>
        </ul>
        
       </nav>
@@ -324,15 +325,15 @@
                   <form id="contact-form" class="flex flex-col gap-5">
                     <div class="flex flex-col gap-2">
                       <label for="name" data-i18n="formLabelName">Nom</label>
-                      <input type="text" name="user_name" id="name" class="border border-gray-400 outline-none focus:outline-1 focus:outline-blue-700 focus:border-none p-2 dark:text-black" required>
+                      <input type="text" name="user_name" id="name" class="border border-gray-400 outline-none focus:outline-1 focus:outline-blue-700 focus:border-none p-2 dark:text-black" autocomplete="on" required="">
                     </div>
                     <div class="flex flex-col gap-2">
                       <label for="email" data-i18n="formLabelEmail">Email</label>
-                      <input type="email" name="user_email" id="email" class="border border-gray-400 outline-none focus:outline-1 focus:outline-blue-700 focus:border-none p-2 dark:text-black" required>
+                      <input type="email" name="user_email" id="email" class="border border-gray-400 outline-none focus:outline-1 focus:outline-blue-700 focus:border-none p-2 dark:text-black" autocomplete="on" required="">
                     </div>
                     <div class="flex flex-col gap-2">
                       <label for="message" data-i18n="formLabelMessage">Message</label>
-                      <textarea name="message" id="message" cols="30" rows="5" class="border border-gray-400 outline-none focus:outline-1 focus:outline-blue-700 focus:border-none dark:text-black" required></textarea>
+                      <textarea name="message" id="message" cols="30" rows="5" class="border border-gray-400 outline-none focus:outline-1 focus:outline-blue-700 focus:border-none dark:text-black" required=""></textarea>
                     </div>
                     <button type="submit" class="text-white bg-blue-700 px-3 py-2 w-full cursor-pointer" data-i18n="formButtonText">Envoyer un message</button>
                   </form>
