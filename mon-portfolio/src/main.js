@@ -121,7 +121,7 @@ const fillProgressBars = () => {
         const p = document.createElement('p');
         const span = document.createElement('span');
         p.classList.add('absolute', 'w-3/4', 'top-[2px]', 'text-sm', 'md:text-base', 'lg:text-base');
-        span.classList.add('absolute', 'top-[5px]', 'right-[10px]', 'text-blue-700');
+        span.classList.add('absolute', 'top-[5px]', 'right-[10px]', 'text-blue-700', 'dark:text-blue-400');
         p.textContent = skill.name;
         span.textContent = skill.level + "%";
         const container = skillElements[skill.name];
