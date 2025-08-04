@@ -19,7 +19,7 @@ This project showcases my skills, projects, and services as a Web & Mobile Devel
 
 | Light Mode | Dark Mode |
 |------------|-----------|
-| ![Light mode screenshot](/screenshots/light.png) | ![Dark mode screenshot](/screenshots/dark.png) |
+| ![Light mode screenshot](public/screenshots/light.png) | ![Dark mode screenshot](public/screenshots/dark.png) |
 
 ---
 
