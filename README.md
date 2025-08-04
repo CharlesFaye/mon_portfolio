@@ -53,19 +53,19 @@ You can also use Live Server if it’s a pure HTML/CSS/JS project.
 
 📁 Project Structure (Simplified)
 
-my-portfolio/
-├── public/
-│   ├── images/
-│   └── lang/
-├── src/
-│   ├── main.js
-    ├── email.js
-    ├── style.css 
-│   └── translate.js
-├── index.html
-├── package-lock.json
-├── package.json
-├── postcss.config.js
+my-portfolio/ <br>
+├── public/<br>
+│   ├── images/<br>
+│   └── lang/<br>
+├── src/<br>
+│   ├── main.js<br>
+    ├── email.js<br>
+    ├── style.css <br>
+│   └── translate.js <br>
+├── index.html <br>
+├── package-lock.json <br>
+├── package.json <br>
+├── postcss.config.js <br>
 └── tailwind.config.js
 
 📦 Deployment
