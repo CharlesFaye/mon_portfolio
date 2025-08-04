@@ -1,3 +1,5 @@
+import '../../src/style.css';
+
 const navmenu = document.getElementById('navmenu');
 const listIcon = document.querySelector('#list-icon > i');
 /**
@@ -279,7 +281,7 @@ const newObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.remove('opacity-0');
-      entry.target.classList.add('animate-fadeInUp');
+      entry.target.classList.add('animate-fade-in-up');
       newObserver.unobserve(entry.target);
     }
   });
