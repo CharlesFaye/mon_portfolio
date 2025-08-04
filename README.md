@@ -15,13 +15,6 @@ This project showcases my skills, projects, and services as a Web & Mobile Devel
 
 ---
 
-## 📸 Screenshots
-
-| Light Mode | Dark Mode |
-|------------|-----------|
-| ![Light mode screenshot](public/screenshots/light.png) | ![Dark mode screenshot](public/screenshots/dark.png) |
-
----
 
 ## 🚀 Technologies Used
 
