@@ -1,4 +1,4 @@
-import '../../src/style.css';
+import './style.css';
 
 const navmenu = document.getElementById('navmenu');
 const listIcon = document.querySelector('#list-icon > i');
