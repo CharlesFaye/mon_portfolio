@@ -44,9 +44,9 @@ This project showcases my skills, projects, and services as a Web & Mobile Devel
 2. Install dependencies (if using a bundler like Vite or Webpack)
  npm install
 
-3. Run the development server
-   npm run dev
-4. Build for production
+3. Run the development server <br>
+   npm run dev 
+4. Build for production <br>
    npm run build
    
 You can also use Live Server if it’s a pure HTML/CSS/JS project.
