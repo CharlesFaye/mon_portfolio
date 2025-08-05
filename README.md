@@ -66,5 +66,5 @@ This portfolio is deployed using Vercel.
 
 👉 [Live Demo](https://charles-simel-faye.vercel.app/)
 
-📄 License
+📄 License <br>
 This project is open-source and available under the MIT License.
