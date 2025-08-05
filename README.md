@@ -61,7 +61,7 @@ my-portfolio/ <br>
 ├── postcss.config.js <br>
 └── tailwind.config.js
 
-📦 Deployment
+📦 Deployment<br>
 This portfolio is deployed using Vercel.
 
 👉 [Live Demo](https://charles-simel-faye.vercel.app/)
