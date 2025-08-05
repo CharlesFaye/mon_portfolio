@@ -34,7 +34,7 @@ This project showcases my skills, projects, and services as a Web & Mobile Devel
    git clone https://github.com/charlesfaye/my-portfolio.git
    cd my-portfolio
 
-2. Install dependencies (if using a bundler like Vite or Webpack)
+2. Install dependencies (if using a bundler like Vite or Webpack)<br>
  npm install
 
 3. Run the development server <br>
@@ -51,10 +51,10 @@ my-portfolio/ <br>
 │   ├── images/<br>
 │   └── lang/<br>
 ├── src/<br>
-│   ├── main.js<br>
-    ├── email.js<br>
-    ├── style.css <br>
-│   └── translate.js <br>
+│    ├── main.js<br>
+│    ├── email.js<br>
+│    ├── style.css <br>
+│    └── translate.js <br>
 ├── index.html <br>
 ├── package-lock.json <br>
 ├── package.json <br>
