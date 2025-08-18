@@ -24,7 +24,7 @@ const failMessage = () => {
 
 document.getElementById('contact-form').addEventListener('submit', function (event) {
   event.preventDefault();
-  emailjs.sendForm('service_egrppi8', 'template_11rytxe', this)
+  emailjs.sendForm('service_iytj9lp', 'template_11rytxe', this)
     .then(function (response) {
       successMessage()
     }, function (error) {
